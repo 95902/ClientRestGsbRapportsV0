@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace ClientRestGsbRapports
 {
-    public partial class AjouterMedicament2 : Form
+    public partial class FrmMajMedicament : Form
     {
-        public AjouterMedicament2()
+        public FrmMajMedicament()
         {
             InitializeComponent();
         }
 
-    }  
+    }
 }
