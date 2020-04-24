@@ -18,21 +18,27 @@ namespace ClientRestGsbRapports
     {
         private string site;
         private WebClient wb;
-        private Secretaire laSecretaire=new Secretaire ();
+        private Secretaire laSecretaire;
         private string url;
      
         public FrmVoirFamilles(Secretaire s)
         {
             InitializeComponent();
+            this.laSecretaire = s;
+            string mdpHas = s.getHashTicketMdp();
             this.wb = new WebClient();
-            laSecretaire.getHashTicketMdp();
             this.site = "http://localhost/restGSB/";
-            this.url = this.site+ "familles?ticket="+ laSecretaire.getHashTicketMdp();
+            this.dataGridView1.DataSource = null;
+            this.url = this.site + "familles?ticket=" + mdpHas;
             string data = this.wb.DownloadString(url);
-            List<Famille> f = JsonConvert.DeserializeObject<List<Famille>>(data);
-            listBox1.DataSource = f;
-            listBox1.ValueMember = "id";
-            listBox1.DisplayMember = "libelle";
+            dynamic d = JsonConvert.DeserializeObject(data);
+            this.laSecretaire.ticket = d.ticket;
+            // this.laSecretaire.
+            string familles = d.familles.ToString();
+
+            List<Famille> l = JsonConvert.DeserializeObject<List<Famille>>(familles);
+            dataGridView1.DataSource = l;
+
             // code ici
         }
 
