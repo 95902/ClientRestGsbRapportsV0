@@ -33,7 +33,8 @@ namespace ClientRestGsbRapports
             string data = this.wb.DownloadString(url);
             dynamic d = JsonConvert.DeserializeObject(data);
             this.laSecretaire.ticket = d.ticket;
-            // this.laSecretaire.
+            // this.laSecretaire
+            string familles1 = "";
             string familles = d.familles.ToString();
 
             List<Famille> l = JsonConvert.DeserializeObject<List<Famille>>(familles);
