@@ -115,10 +115,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\FrmVoirFamilles.datasource" />
     <None Include="Properties\DataSources\mdlGsbRapports.Famille.datasource" />
+    <None Include="Properties\DataSources\mdlGsbRapports.Medicament.datasource" />
     <None Include="Properties\DataSources\Newtonsoft.Json.Bson.BsonObjectId.datasource" />
     <None Include="Properties\DataSources\Newtonsoft.Json.Bson.BsonReader.datasource" />
     <None Include="Properties\DataSources\Newtonsoft.Json.Bson.BsonWriter.datasource" />

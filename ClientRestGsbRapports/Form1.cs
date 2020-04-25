@@ -20,18 +20,18 @@ namespace ClientRestGsbRapports
         private WebClient wb;
         private string ticket;
         private Secretaire laSecretaire;
-        
+
         public Form1()
         {
             InitializeComponent();
             this.wb = new WebClient();
             this.site = "http://localhost/restGSB/";
-           this.menuStrip1.Visible = false;
+            this.menuStrip1.Visible = false;
             this.laSecretaire = new Secretaire();
-           
+
         }
 
-        private void btnValider_Click(object sender, EventArgs e)
+        private void btnValider_Click_1(object sender, EventArgs e)
         {
             string mdp = this.txtMdp.Text;
             string login = this.txtLogin.Text;
@@ -41,8 +41,8 @@ namespace ClientRestGsbRapports
             /*Appel à l'objet wb pour récupérer le résultat de la requête*/
             reponse = this.wb.DownloadString(url);
             /* récupération, après désérialisation et conversion*/
-             this.ticket = (string)JsonConvert.DeserializeObject(reponse);
-             if (this.ticket == null)
+            this.ticket = (string)JsonConvert.DeserializeObject(reponse);
+            if (this.ticket == null)
                 MessageBox.Show("erreur de Login");
             else
             {
@@ -55,7 +55,7 @@ namespace ClientRestGsbRapports
                 /* On récupère la réponse du serveur de type json */
                 reponse = this.wb.DownloadString(url);
                 /*On transforme la réponse json en objet Secrétaire!!*/
-                Secretaire s  = JsonConvert.DeserializeObject<Secretaire>(reponse);
+                Secretaire s = JsonConvert.DeserializeObject<Secretaire>(reponse);
                 if (s == null)
                     MessageBox.Show("erreur de mot de passe!!");
                 else
@@ -69,7 +69,6 @@ namespace ClientRestGsbRapports
                     this.menuStrip1.Visible = true;
                 }
             }
-          
         }
 
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
@@ -77,7 +76,7 @@ namespace ClientRestGsbRapports
             Application.Exit();
         }
 
-       
+
         private void voirToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -95,6 +94,17 @@ namespace ClientRestGsbRapports
         {
             FrmNewFamille f = new FrmNewFamille(this.laSecretaire);
             f.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gérerLesMédicamentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGererLesMedicaments g = new FrmGererLesMedicaments(this.laSecretaire);
+            g.Show();
         }
     }
 }
