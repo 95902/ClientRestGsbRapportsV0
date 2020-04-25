@@ -103,7 +103,7 @@ namespace ClientRestGsbRapports
 
         private void gérerLesMédicamentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmGererLesMedicaments g = new FrmGererLesMedicaments(this.laSecretaire);
+            FormGererMedicament g = new FormGererMedicament(this.laSecretaire);
             g.Show();
         }
     }
