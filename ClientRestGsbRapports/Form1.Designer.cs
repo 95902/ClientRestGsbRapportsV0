@@ -29,12 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.txtLogin = new System.Windows.Forms.TextBox();
             this.LblLogin = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtMdp = new System.Windows.Forms.TextBox();
-            this.btnValider = new System.Windows.Forms.Button();
-            this.lblNom = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,16 +42,20 @@
             this.voirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtFamille = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtLogin
-            // 
-            this.txtLogin.Location = new System.Drawing.Point(127, 106);
-            this.txtLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(132, 22);
-            this.txtLogin.TabIndex = 1;
             // 
             // LblLogin
             // 
@@ -77,37 +77,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Mot de passe";
             // 
-            // txtMdp
-            // 
-            this.txtMdp.Location = new System.Drawing.Point(127, 164);
-            this.txtMdp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMdp.Name = "txtMdp";
-            this.txtMdp.Size = new System.Drawing.Size(132, 22);
-            this.txtMdp.TabIndex = 4;
-            // 
-            // btnValider
-            // 
-            this.btnValider.Location = new System.Drawing.Point(127, 244);
-            this.btnValider.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(100, 28);
-            this.btnValider.TabIndex = 5;
-            this.btnValider.Text = "Valider";
-            this.btnValider.UseVisualStyleBackColor = true;
-            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
-            // 
-            // lblNom
-            // 
-            this.lblNom.AutoSize = true;
-            this.lblNom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblNom.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNom.Location = new System.Drawing.Point(20, 41);
-            this.lblNom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(2, 19);
-            this.lblNom.TabIndex = 6;
-            // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -120,7 +89,8 @@
             this.familleToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(597, 30);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(660, 28);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -129,7 +99,7 @@
             this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quitterToolStripMenuItem});
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
-            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(66, 26);
+            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
             this.fichierToolStripMenuItem.Text = "Fichier";
             // 
             // quitterToolStripMenuItem
@@ -142,25 +112,25 @@
             // médecinsToolStripMenuItem
             // 
             this.médecinsToolStripMenuItem.Name = "médecinsToolStripMenuItem";
-            this.médecinsToolStripMenuItem.Size = new System.Drawing.Size(86, 26);
+            this.médecinsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.médecinsToolStripMenuItem.Text = "Médecins";
             // 
             // rapportsToolStripMenuItem
             // 
             this.rapportsToolStripMenuItem.Name = "rapportsToolStripMenuItem";
-            this.rapportsToolStripMenuItem.Size = new System.Drawing.Size(65, 26);
+            this.rapportsToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.rapportsToolStripMenuItem.Text = "Visites";
             // 
             // médicamentsToolStripMenuItem
             // 
             this.médicamentsToolStripMenuItem.Name = "médicamentsToolStripMenuItem";
-            this.médicamentsToolStripMenuItem.Size = new System.Drawing.Size(112, 26);
+            this.médicamentsToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
             this.médicamentsToolStripMenuItem.Text = "Médicaments";
             // 
             // visiteursToolStripMenuItem
             // 
             this.visiteursToolStripMenuItem.Name = "visiteursToolStripMenuItem";
-            this.visiteursToolStripMenuItem.Size = new System.Drawing.Size(78, 26);
+            this.visiteursToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
             this.visiteursToolStripMenuItem.Text = "Visiteurs";
             // 
             // familleToolStripMenuItem
@@ -170,7 +140,7 @@
             this.modifierToolStripMenuItem,
             this.ajouterToolStripMenuItem});
             this.familleToolStripMenuItem.Name = "familleToolStripMenuItem";
-            this.familleToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
+            this.familleToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.familleToolStripMenuItem.Text = "Famille";
             // 
             // voirToolStripMenuItem
@@ -194,17 +164,116 @@
             this.ajouterToolStripMenuItem.Text = "Ajouter";
             this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterToolStripMenuItem_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 28);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(252, 596);
+            this.panel1.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 174);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(226, 161);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.txtFamille);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(248, 28);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(412, 596);
+            this.panel2.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label3.Location = new System.Drawing.Point(24, 52);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 25);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Sign up";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(29, 393);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(295, 34);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Valider";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBox1.Location = new System.Drawing.Point(29, 304);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(295, 22);
+            this.textBox1.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(24, 263);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(159, 25);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Mot de passe";
+            // 
+            // txtFamille
+            // 
+            this.txtFamille.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtFamille.Location = new System.Drawing.Point(29, 213);
+            this.txtFamille.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFamille.Name = "txtFamille";
+            this.txtFamille.Size = new System.Drawing.Size(295, 22);
+            this.txtFamille.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label4.Location = new System.Drawing.Point(24, 174);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 25);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Login";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(597, 321);
-            this.Controls.Add(this.lblNom);
-            this.Controls.Add(this.btnValider);
-            this.Controls.Add(this.txtMdp);
+            this.ClientSize = new System.Drawing.Size(660, 624);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LblLogin);
-            this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -213,18 +282,18 @@
             this.Text = "Gestion des rapports de visite";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.Label LblLogin;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMdp;
-        private System.Windows.Forms.Button btnValider;
-        private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fichierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitterToolStripMenuItem;
@@ -236,6 +305,15 @@
         private System.Windows.Forms.ToolStripMenuItem voirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtFamille;
+        private System.Windows.Forms.Label label4;
     }
 }
 
