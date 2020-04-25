@@ -46,6 +46,7 @@
             this.voirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,7 +138,6 @@
             this.médecinsToolStripMenuItem.Name = "médecinsToolStripMenuItem";
             this.médecinsToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.médecinsToolStripMenuItem.Text = "Médecins";
-         
             // 
             // rapportsToolStripMenuItem
             // 
@@ -170,29 +170,37 @@
             // voirToolStripMenuItem
             // 
             this.voirToolStripMenuItem.Name = "voirToolStripMenuItem";
-            this.voirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.voirToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.voirToolStripMenuItem.Text = "Voir";
             this.voirToolStripMenuItem.Click += new System.EventHandler(this.voirToolStripMenuItem_Click);
             // 
             // modifierToolStripMenuItem
             // 
             this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
-            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.modifierToolStripMenuItem.Text = "Modifier";
             this.modifierToolStripMenuItem.Click += new System.EventHandler(this.modifierToolStripMenuItem_Click);
             // 
             // ajouterToolStripMenuItem
             // 
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.ajouterToolStripMenuItem.Text = "Ajouter";
             this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterToolStripMenuItem_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(83, 48);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(333, 20);
+            this.dateTimePicker1.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(448, 261);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.lblNom);
             this.Controls.Add(this.btnValider);
             this.Controls.Add(this.txtMdp);
@@ -229,6 +237,7 @@
         private System.Windows.Forms.ToolStripMenuItem voirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajouterToolStripMenuItem;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
