@@ -44,32 +44,57 @@ namespace ClientRestGsbRapports
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        { 
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e,Secretaire s)
-        {
-            comboBox1.DataSource = null;
+            dataGridView1.DataSource = null;
             string idFamille = comboBox1.SelectedValue.ToString();
-            this.laSecretaire = s;
-            string mdpHas = s.getHashTicketMdp();
-            this.url = this.site + "medicaments?ticket=" + mdpHas;
-            string data = this.wb.DownloadString(url);
+            string mdpHas = this.laSecretaire.getHashTicketMdp();
+            this.url = this.site + "medicaments?ticket=" + mdpHas + "&"+"nom="+ idFamille;
+            string data = this.wb.DownloadString(url); 
             dynamic d = JsonConvert.DeserializeObject(data);
             this.laSecretaire.ticket = d.ticket;
             // this.laSecretaire
-            string medicament  = d.medicaments.ToString();//liste de familles
+            string medicament = d.medicaments.ToString();//liste de familles
 
-            List<Medicament> M = JsonConvert.DeserializeObject<List<Medicament>>(medicaments);
+            List<Medicament> M = JsonConvert.DeserializeObject<List<Medicament>>(medicament);
             dataGridView1.DataSource = M;
 
-           
+
+            //- -Sélectionner les médicaments d’une famille de médicament
+            //    syntaxe: < nom domaine >/ gsbRapports / medicaments ? ticket =< ticket > &idFamille < id > 
+            //    exemple : http://localhost/restGSB/medicaments?ticket=4nblbv5zttybtvd3ygx&nom=te
+
+
+
         }
+
+        //private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        //{
+
+        //}
+
+        //private void comboBox1_SelectedIndexChanged(object sender, EventArgs e,Secretaire s)
+        //{
+
+        //    string idFamille = (string)comboBox1.SelectedItem;
+        //    this.laSecretaire = s;
+        //    string mdpHas = s.getHashTicketMdp();
+        //    this.url = this.site + "medicaments?ticket=" + mdpHas+ "&nom="+idFamille;
+        //    string data = this.wb.DownloadString(url);
+        //    dynamic d = JsonConvert.DeserializeObject(data);
+        //    this.laSecretaire.ticket = d.ticket;
+        //    // this.laSecretaire
+        //    string medicament  = d.medicaments.ToString();//liste de familles
+
+        //    List<Medicament> M = JsonConvert.DeserializeObject<List<Medicament>>(medicament);
+        //    dataGridView1.DataSource = M;
+
+        //}
+
+
     }
 }
