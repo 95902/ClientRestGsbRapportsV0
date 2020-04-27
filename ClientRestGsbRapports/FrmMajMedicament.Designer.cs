@@ -90,7 +90,7 @@
             // 
             this.cmbFamille.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cmbFamille.FormattingEnabled = true;
-            this.cmbFamille.Location = new System.Drawing.Point(29, 200);
+            this.cmbFamille.Location = new System.Drawing.Point(29, 204);
             this.cmbFamille.Margin = new System.Windows.Forms.Padding(4);
             this.cmbFamille.Name = "cmbFamille";
             this.cmbFamille.Size = new System.Drawing.Size(427, 24);
@@ -99,7 +99,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
             this.button2.Location = new System.Drawing.Point(29, 490);
             this.button2.Name = "button2";
@@ -138,44 +138,44 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label10.Location = new System.Drawing.Point(24, 397);
+            this.label10.Location = new System.Drawing.Point(25, 402);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(220, 25);
+            this.label10.Size = new System.Drawing.Size(186, 20);
             this.label10.TabIndex = 8;
             this.label10.Text = "Contre Indications";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label9.Location = new System.Drawing.Point(24, 326);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 25);
+            this.label9.Size = new System.Drawing.Size(64, 20);
             this.label9.TabIndex = 7;
             this.label9.Text = "Effets";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label8.Location = new System.Drawing.Point(24, 249);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(152, 25);
+            this.label8.Size = new System.Drawing.Size(129, 20);
             this.label8.TabIndex = 6;
             this.label8.Text = "Composition";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label7.Location = new System.Drawing.Point(24, 171);
+            this.label7.Location = new System.Drawing.Point(24, 164);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(203, 25);
+            this.label7.Size = new System.Drawing.Size(171, 20);
             this.label7.TabIndex = 5;
             this.label7.Text = "Nom Commercial";
             // 
