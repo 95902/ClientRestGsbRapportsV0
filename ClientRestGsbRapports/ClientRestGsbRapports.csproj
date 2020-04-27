@@ -56,11 +56,11 @@
     <Compile Include="FormGererMedicament.Designer.cs">
       <DependentUpon>FormGererMedicament.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMedicaments.cs">
+    <Compile Include="FrmMedicaments.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMedicaments.Designer.cs">
-      <DependentUpon>FormMedicaments.cs</DependentUpon>
+    <Compile Include="FrmMedicaments.Designer.cs">
+      <DependentUpon>FrmMedicaments.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmNewMedicement.cs">
       <SubType>Form</SubType>
@@ -103,8 +103,8 @@
     <EmbeddedResource Include="FormGererMedicament.resx">
       <DependentUpon>FormGererMedicament.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMedicaments.resx">
-      <DependentUpon>FormMedicaments.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMedicaments.resx">
+      <DependentUpon>FrmMedicaments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmNewMedicement.resx">
       <DependentUpon>FrmNewMedicement.cs</DependentUpon>

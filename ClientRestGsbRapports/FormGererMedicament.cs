@@ -19,6 +19,7 @@ namespace ClientRestGsbRapports
         private WebClient wb;
         private Secretaire laSecretaire;
         private string url;
+        private Medicament leMedicament;
         public FormGererMedicament(Secretaire s)
         {
             InitializeComponent();
@@ -64,11 +65,16 @@ namespace ClientRestGsbRapports
 
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.leMedicament = (Medicament)this.dataGridView1.CurrentRow.DataBoundItem;
+             FrmMedicaments f = new FrmMedicaments(this.leMedicament);
+               f.Show();
 
-
-
-
-
+            //    this.laVoiture = (Voiture)this.dataGridView1.CurrentRow.DataBoundItem;
+            //FrmMaj f = new FrmMaj(this.laVoiture);
+            //f.Show();
+        }
     }
 
 
