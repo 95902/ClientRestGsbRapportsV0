@@ -36,24 +36,18 @@ namespace ClientRestGsbRapports
 
             List<Famille> l = JsonConvert.DeserializeObject<List<Famille>>(familles);
 
-            comboBox1.DataSource =l ;
+            comboBox1.DataSource = l;
             comboBox1.ValueMember = "id";
             comboBox1.DisplayMember = "libelle";
             /* dataGridView1.DataSource = l*/
             ;//chargement de dataGridview
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        { 
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = null;
-            string idFamille = comboBox1.SelectedValue.ToString();
+            string idFamille = comboBox1.SelectedValue.ToString().ToLower();
             string mdpHas = this.laSecretaire.getHashTicketMdp();
-            this.url = this.site + "medicaments?ticket=" + mdpHas + "&" + "nom=" + idFamille;
+            this.url = this.site + "medicaments?ticket=" + mdpHas + "&idFamille=" + idFamille;
             string data = this.wb.DownloadString(url);
             dynamic d = JsonConvert.DeserializeObject(data);
             this.laSecretaire.ticket = d.ticket;
@@ -62,15 +56,28 @@ namespace ClientRestGsbRapports
 
             List<Medicament> M = JsonConvert.DeserializeObject<List<Medicament>>(medicament);
             dataGridView1.DataSource = M;
+
+
+            //- -Sélectionner les médicaments d’une famille de médicament
+            //    syntaxe: < nom domaine >/ gsbRapports / medicaments ? ticket =< ticket > &idFamille < id > 
+            //    exemple : http://localhost/restGSB/medicaments?ticket=4nblbv5zttybtvd3ygx&nom=te
+
+
+
         }
 
-        //private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         //{
         //    dataGridView1.DataSource = null;
         //    string idFamille = comboBox1.SelectedValue.ToString();
         //    string mdpHas = this.laSecretaire.getHashTicketMdp();
-        //    this.url = this.site + "medicaments?ticket=" + mdpHas + "&"+"nom="+ idFamille;
-        //    string data = this.wb.DownloadString(url); 
+        //    this.url = this.site + "medicaments?ticket=" + mdpHas + "&" + "nom=" + idFamille;
+        //    string data = this.wb.DownloadString(url);
         //    dynamic d = JsonConvert.DeserializeObject(data);
         //    this.laSecretaire.ticket = d.ticket;
         //    // this.laSecretaire
@@ -78,20 +85,15 @@ namespace ClientRestGsbRapports
 
         //    List<Medicament> M = JsonConvert.DeserializeObject<List<Medicament>>(medicament);
         //    dataGridView1.DataSource = M;
+        //}
 
 
-        //- -Sélectionner les médicaments d’une famille de médicament
-        //    syntaxe: < nom domaine >/ gsbRapports / medicaments ? ticket =< ticket > &idFamille < id > 
-        //    exemple : http://localhost/restGSB/medicaments?ticket=4nblbv5zttybtvd3ygx&nom=te
+       
+
 
 
 
     }
-
-   
-
-
-
 
 
 }
