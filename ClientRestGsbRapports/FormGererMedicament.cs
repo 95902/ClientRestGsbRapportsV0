@@ -34,9 +34,7 @@ namespace ClientRestGsbRapports
             this.laSecretaire.ticket = d.ticket;
             // this.laSecretaire
             string familles = d.familles.ToString();//liste de familles
-
             List<Famille> l = JsonConvert.DeserializeObject<List<Famille>>(familles);
-
             comboBox1.DataSource = l;
             comboBox1.ValueMember = "id";
             comboBox1.DisplayMember = "libelle";
@@ -55,7 +53,6 @@ namespace ClientRestGsbRapports
             this.laSecretaire.ticket = d.ticket;
             // this.laSecretaire
             string medicament = d.medicaments.ToString();//liste de familles
-
             List<Medicament> M = JsonConvert.DeserializeObject<List<Medicament>>(medicament);
             dataGridView1.DataSource = M;
         }
@@ -71,10 +68,6 @@ namespace ClientRestGsbRapports
             this.leMedicament = (Medicament)this.dataGridView1.CurrentRow.DataBoundItem;
              FrmMedicaments f = new FrmMedicaments(this.leMedicament);
                f.Show();
-
-            //    this.laVoiture = (Voiture)this.dataGridView1.CurrentRow.DataBoundItem;
-            //FrmMaj f = new FrmMaj(this.laVoiture);
-            //f.Show();
         }
     }
 

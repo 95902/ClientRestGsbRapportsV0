@@ -34,7 +34,7 @@ namespace ClientRestGsbRapports
             dynamic d = JsonConvert.DeserializeObject(data);
             this.laSecretaire.ticket = d.ticket;
             // this.laSecretaire
-            string familles1 = "";
+           
             string familles = d.familles.ToString();
 
             List<Famille> l = JsonConvert.DeserializeObject<List<Famille>>(familles);
@@ -43,9 +43,6 @@ namespace ClientRestGsbRapports
             // code ici
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

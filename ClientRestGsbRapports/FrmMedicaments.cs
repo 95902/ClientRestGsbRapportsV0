@@ -28,7 +28,7 @@ namespace ClientRestGsbRapports
             this.leMedicament = e;
             this.wb = new WebClient();
             this.site = "http://localhost/restGSB/";
-            this.laSecretaire = new Secretaire();
+            
             this.txtComposition.Text += e.composition;
             this.txtContreIndication.Text = e.contreIndications;
             this.txtEffets.Text = e.effets;
