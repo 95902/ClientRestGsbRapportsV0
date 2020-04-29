@@ -89,7 +89,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(548, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(731, 27);
             this.bindingNavigator1.TabIndex = 5;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -99,13 +99,13 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Ajouter nouveau";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
             this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Nombre total d\'éléments";
             // 
@@ -115,7 +115,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Supprimer";
             // 
             // bindingNavigatorMoveFirstItem
@@ -124,7 +124,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Placer en premier";
             // 
             // bindingNavigatorMovePreviousItem
@@ -133,7 +133,7 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Déplacer vers le haut";
             // 
             // bindingNavigatorSeparator
@@ -147,7 +147,7 @@
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Position actuelle";
             // 
@@ -162,7 +162,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Déplacer vers le bas";
             // 
             // bindingNavigatorMoveLastItem
@@ -171,7 +171,7 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Placer en dernier";
             // 
             // bindingNavigatorSeparator2
@@ -185,18 +185,18 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 27);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(211, 560);
+            this.panel1.Size = new System.Drawing.Size(281, 695);
             this.panel1.TabIndex = 13;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 212);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 261);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(170, 131);
+            this.pictureBox1.Size = new System.Drawing.Size(227, 161);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -217,17 +217,19 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(204, 27);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(272, 27);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(344, 560);
+            this.panel2.Size = new System.Drawing.Size(459, 695);
             this.panel2.TabIndex = 15;
             // 
             // txtIdMedicament
             // 
-            this.txtIdMedicament.Location = new System.Drawing.Point(48, 148);
+            this.txtIdMedicament.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIdMedicament.Location = new System.Drawing.Point(23, 208);
+            this.txtIdMedicament.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIdMedicament.Name = "txtIdMedicament";
-            this.txtIdMedicament.Size = new System.Drawing.Size(270, 20);
+            this.txtIdMedicament.Size = new System.Drawing.Size(359, 22);
             this.txtIdMedicament.TabIndex = 12;
             // 
             // label6
@@ -236,27 +238,34 @@
             this.label6.BackColor = System.Drawing.SystemColors.Info;
             this.label6.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(45, 128);
+            this.label6.Location = new System.Drawing.Point(19, 169);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 17);
+            this.label6.Size = new System.Drawing.Size(151, 20);
             this.label6.TabIndex = 11;
             this.label6.Text = "Id Medicament";
             // 
             // btnMiseAJour
             // 
-            this.btnMiseAJour.Location = new System.Drawing.Point(243, 470);
+            this.btnMiseAJour.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnMiseAJour.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMiseAJour.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnMiseAJour.Location = new System.Drawing.Point(23, 546);
+            this.btnMiseAJour.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMiseAJour.Name = "btnMiseAJour";
-            this.btnMiseAJour.Size = new System.Drawing.Size(75, 23);
+            this.btnMiseAJour.Size = new System.Drawing.Size(359, 34);
             this.btnMiseAJour.TabIndex = 10;
             this.btnMiseAJour.Text = "Mettre a jour";
-            this.btnMiseAJour.UseVisualStyleBackColor = true;
+            this.btnMiseAJour.UseVisualStyleBackColor = false;
             this.btnMiseAJour.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // txtNonComercial
             // 
-            this.txtNonComercial.Location = new System.Drawing.Point(48, 212);
+            this.txtNonComercial.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtNonComercial.Location = new System.Drawing.Point(23, 291);
+            this.txtNonComercial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNonComercial.Name = "txtNonComercial";
-            this.txtNonComercial.Size = new System.Drawing.Size(270, 20);
+            this.txtNonComercial.Size = new System.Drawing.Size(359, 22);
             this.txtNonComercial.TabIndex = 6;
             // 
             // label1
@@ -264,31 +273,38 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(97, 42);
+            this.label1.Location = new System.Drawing.Point(18, 55);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 18);
+            this.label1.Size = new System.Drawing.Size(253, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Modifier Medicament ";
             // 
             // txtEffets
             // 
-            this.txtEffets.Location = new System.Drawing.Point(48, 323);
+            this.txtEffets.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtEffets.Location = new System.Drawing.Point(23, 420);
+            this.txtEffets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEffets.Name = "txtEffets";
-            this.txtEffets.Size = new System.Drawing.Size(270, 20);
+            this.txtEffets.Size = new System.Drawing.Size(359, 22);
             this.txtEffets.TabIndex = 8;
             // 
             // txtContreIndication
             // 
-            this.txtContreIndication.Location = new System.Drawing.Point(48, 392);
+            this.txtContreIndication.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtContreIndication.Location = new System.Drawing.Point(23, 500);
+            this.txtContreIndication.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtContreIndication.Name = "txtContreIndication";
-            this.txtContreIndication.Size = new System.Drawing.Size(270, 20);
+            this.txtContreIndication.Size = new System.Drawing.Size(359, 22);
             this.txtContreIndication.TabIndex = 9;
             // 
             // txtComposition
             // 
-            this.txtComposition.Location = new System.Drawing.Point(48, 269);
+            this.txtComposition.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtComposition.Location = new System.Drawing.Point(23, 351);
+            this.txtComposition.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtComposition.Name = "txtComposition";
-            this.txtComposition.Size = new System.Drawing.Size(270, 20);
+            this.txtComposition.Size = new System.Drawing.Size(359, 22);
             this.txtComposition.TabIndex = 7;
             // 
             // label2
@@ -297,9 +313,10 @@
             this.label2.BackColor = System.Drawing.SystemColors.Info;
             this.label2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(45, 192);
+            this.label2.Location = new System.Drawing.Point(19, 250);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 17);
+            this.label2.Size = new System.Drawing.Size(169, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nom commercial";
             // 
@@ -309,9 +326,10 @@
             this.label4.BackColor = System.Drawing.SystemColors.Info;
             this.label4.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label4.Location = new System.Drawing.Point(45, 249);
+            this.label4.Location = new System.Drawing.Point(19, 317);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 17);
+            this.label4.Size = new System.Drawing.Size(129, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Composition";
             // 
@@ -321,9 +339,10 @@
             this.label3.BackColor = System.Drawing.SystemColors.Info;
             this.label3.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(45, 298);
+            this.label3.Location = new System.Drawing.Point(19, 386);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 17);
+            this.label3.Size = new System.Drawing.Size(64, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Effets";
             // 
@@ -333,20 +352,22 @@
             this.label5.BackColor = System.Drawing.SystemColors.Info;
             this.label5.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label5.Location = new System.Drawing.Point(45, 365);
+            this.label5.Location = new System.Drawing.Point(19, 458);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 17);
+            this.label5.Size = new System.Drawing.Size(183, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Contre indications";
             // 
             // FrmMedicaments
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(548, 587);
+            this.ClientSize = new System.Drawing.Size(731, 722);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bindingNavigator1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmMedicaments";
             this.Text = "FormMedicaments";
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
