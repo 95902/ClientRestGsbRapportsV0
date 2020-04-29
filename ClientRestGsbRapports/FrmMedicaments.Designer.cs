@@ -89,7 +89,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(731, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(731, 31);
             this.bindingNavigator1.TabIndex = 5;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -99,13 +99,13 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Ajouter nouveau";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 28);
             this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Nombre total d\'éléments";
             // 
@@ -115,7 +115,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorDeleteItem.Text = "Supprimer";
             // 
             // bindingNavigatorMoveFirstItem
@@ -124,7 +124,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Placer en premier";
             // 
             // bindingNavigatorMovePreviousItem
@@ -133,13 +133,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Déplacer vers le haut";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -154,7 +154,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -162,7 +162,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Déplacer vers le bas";
             // 
             // bindingNavigatorMoveLastItem
@@ -171,23 +171,23 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Placer en dernier";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 27);
+            this.panel1.Location = new System.Drawing.Point(0, 31);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(281, 695);
+            this.panel1.Size = new System.Drawing.Size(281, 691);
             this.panel1.TabIndex = 13;
             // 
             // pictureBox1
@@ -217,17 +217,17 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(272, 27);
+            this.panel2.Location = new System.Drawing.Point(272, 31);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(459, 695);
+            this.panel2.Size = new System.Drawing.Size(459, 691);
             this.panel2.TabIndex = 15;
             // 
             // txtIdMedicament
             // 
             this.txtIdMedicament.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtIdMedicament.Location = new System.Drawing.Point(23, 208);
-            this.txtIdMedicament.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdMedicament.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdMedicament.Name = "txtIdMedicament";
             this.txtIdMedicament.Size = new System.Drawing.Size(359, 22);
             this.txtIdMedicament.TabIndex = 12;
@@ -251,7 +251,7 @@
             this.btnMiseAJour.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMiseAJour.ForeColor = System.Drawing.SystemColors.Control;
             this.btnMiseAJour.Location = new System.Drawing.Point(23, 546);
-            this.btnMiseAJour.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMiseAJour.Margin = new System.Windows.Forms.Padding(4);
             this.btnMiseAJour.Name = "btnMiseAJour";
             this.btnMiseAJour.Size = new System.Drawing.Size(359, 34);
             this.btnMiseAJour.TabIndex = 10;
@@ -263,7 +263,7 @@
             // 
             this.txtNonComercial.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtNonComercial.Location = new System.Drawing.Point(23, 291);
-            this.txtNonComercial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNonComercial.Margin = new System.Windows.Forms.Padding(4);
             this.txtNonComercial.Name = "txtNonComercial";
             this.txtNonComercial.Size = new System.Drawing.Size(359, 22);
             this.txtNonComercial.TabIndex = 6;
@@ -284,7 +284,7 @@
             // 
             this.txtEffets.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtEffets.Location = new System.Drawing.Point(23, 420);
-            this.txtEffets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEffets.Margin = new System.Windows.Forms.Padding(4);
             this.txtEffets.Name = "txtEffets";
             this.txtEffets.Size = new System.Drawing.Size(359, 22);
             this.txtEffets.TabIndex = 8;
@@ -293,7 +293,7 @@
             // 
             this.txtContreIndication.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtContreIndication.Location = new System.Drawing.Point(23, 500);
-            this.txtContreIndication.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContreIndication.Margin = new System.Windows.Forms.Padding(4);
             this.txtContreIndication.Name = "txtContreIndication";
             this.txtContreIndication.Size = new System.Drawing.Size(359, 22);
             this.txtContreIndication.TabIndex = 9;
@@ -302,7 +302,7 @@
             // 
             this.txtComposition.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtComposition.Location = new System.Drawing.Point(23, 351);
-            this.txtComposition.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtComposition.Margin = new System.Windows.Forms.Padding(4);
             this.txtComposition.Name = "txtComposition";
             this.txtComposition.Size = new System.Drawing.Size(359, 22);
             this.txtComposition.TabIndex = 7;
@@ -367,7 +367,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bindingNavigator1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMedicaments";
             this.Text = "FormMedicaments";
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
