@@ -45,27 +45,23 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtIdMedicament = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnMiseAJour = new System.Windows.Forms.Button();
             this.txtNonComercial = new System.Windows.Forms.TextBox();
-            this.medicamentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.txtEffets = new System.Windows.Forms.TextBox();
             this.txtContreIndication = new System.Windows.Forms.TextBox();
             this.txtComposition = new System.Windows.Forms.TextBox();
-            this.medicamentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtIdMedicament = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.medicamentBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicamentBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingNavigator1
@@ -227,6 +223,25 @@
             this.panel2.Size = new System.Drawing.Size(344, 560);
             this.panel2.TabIndex = 15;
             // 
+            // txtIdMedicament
+            // 
+            this.txtIdMedicament.Location = new System.Drawing.Point(48, 148);
+            this.txtIdMedicament.Name = "txtIdMedicament";
+            this.txtIdMedicament.Size = new System.Drawing.Size(270, 20);
+            this.txtIdMedicament.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.Info;
+            this.label6.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label6.Location = new System.Drawing.Point(45, 128);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(123, 17);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Id Medicament";
+            // 
             // btnMiseAJour
             // 
             this.btnMiseAJour.Location = new System.Drawing.Point(243, 470);
@@ -239,15 +254,10 @@
             // 
             // txtNonComercial
             // 
-            this.txtNonComercial.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicamentBindingSource, "nomCommercial", true));
             this.txtNonComercial.Location = new System.Drawing.Point(48, 212);
             this.txtNonComercial.Name = "txtNonComercial";
             this.txtNonComercial.Size = new System.Drawing.Size(270, 20);
             this.txtNonComercial.TabIndex = 6;
-            // 
-            // medicamentBindingSource
-            // 
-            this.medicamentBindingSource.DataSource = typeof(mdlGsbRapports.Medicament);
             // 
             // label1
             // 
@@ -276,15 +286,10 @@
             // 
             // txtComposition
             // 
-            this.txtComposition.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicamentBindingSource1, "composition", true));
             this.txtComposition.Location = new System.Drawing.Point(48, 269);
             this.txtComposition.Name = "txtComposition";
             this.txtComposition.Size = new System.Drawing.Size(270, 20);
             this.txtComposition.TabIndex = 7;
-            // 
-            // medicamentBindingSource1
-            // 
-            this.medicamentBindingSource1.DataSource = typeof(mdlGsbRapports.Medicament);
             // 
             // label2
             // 
@@ -334,26 +339,6 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Contre indications";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.Info;
-            this.label6.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(45, 128);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 17);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Id Medicament";
-            // 
-            // txtIdMedicament
-            // 
-            this.txtIdMedicament.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicamentBindingSource, "nomCommercial", true));
-            this.txtIdMedicament.Location = new System.Drawing.Point(48, 148);
-            this.txtIdMedicament.Name = "txtIdMedicament";
-            this.txtIdMedicament.Size = new System.Drawing.Size(270, 20);
-            this.txtIdMedicament.TabIndex = 12;
-            // 
             // FrmMedicaments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,8 +356,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.medicamentBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicamentBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -403,8 +386,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.BindingSource medicamentBindingSource;
-        private System.Windows.Forms.BindingSource medicamentBindingSource1;
         private System.Windows.Forms.Button btnMiseAJour;
         private System.Windows.Forms.TextBox txtIdMedicament;
         private System.Windows.Forms.Label label6;

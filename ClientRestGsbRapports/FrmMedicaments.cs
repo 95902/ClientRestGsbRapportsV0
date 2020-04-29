@@ -25,14 +25,14 @@ namespace ClientRestGsbRapports
         {
             InitializeComponent();
 
-            this.leMedicament = e;
-            this.wb = new WebClient();
-            this.site = "http://localhost/restGSB/";
-            this.laSecretaire = s;
-            this.txtComposition.Text += e.composition;
-            this.txtContreIndication.Text = e.contreIndications;
-            this.txtEffets.Text = e.effets;
-            this.txtNonComercial.Text = e.nomCommercial;
+            leMedicament = e;
+            wb = new WebClient();
+            site = "http://localhost/restGSB/";
+            laSecretaire = s;
+            txtComposition.Text += e.composition;
+            txtContreIndication.Text = e.contreIndications;
+            txtEffets.Text = e.effets;
+            txtNonComercial.Text = e.nomCommercial;
             txtIdMedicament.Text = e.id;
 
         }
@@ -46,7 +46,7 @@ namespace ClientRestGsbRapports
                 this.url = this.site + "medicament";
                 NameValueCollection parametres = new NameValueCollection();
                 parametres.Add("ticket", mdpHas);
-                parametres.Add("idMedicament",txtIdMedicament.Text );
+                parametres.Add("idMedicament", txtIdMedicament.Text );
                 parametres.Add("effets", txtEffets.Text);
                 parametres.Add("contreIndications", txtContreIndication.Text);
                 parametres.Add("composition", txtContreIndication.Text);

@@ -54,7 +54,7 @@ namespace ClientRestGsbRapports
             try
             {
                 string mdpHas = this.laSecretaire.getHashTicketMdp();
-                this.url = this.site + "medicaments?ticket=" + mdpHas;
+                this.url = this.site + "famille" + mdpHas;
                 NameValueCollection parametres = new NameValueCollection();
                 string idFamille = cmbFamille.SelectedIndex.ToString();
                 parametres.Add("ticket", mdpHas);
