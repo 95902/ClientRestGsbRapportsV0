@@ -30,12 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNewMedicement));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtNomCommercial = new System.Windows.Forms.TextBox();
             this.cmbNomFamille = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btnValider = new System.Windows.Forms.Button();
+            this.txtContreIndications = new System.Windows.Forms.TextBox();
+            this.txtEffets = new System.Windows.Forms.TextBox();
+            this.txtComposition = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -43,7 +44,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtNomCommercial = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textIdMedicament = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,13 +54,15 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.panel2.Controls.Add(this.textIdMedicament);
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtNomCommercial);
             this.panel2.Controls.Add(this.cmbNomFamille);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.btnValider);
+            this.panel2.Controls.Add(this.txtContreIndications);
+            this.panel2.Controls.Add(this.txtEffets);
+            this.panel2.Controls.Add(this.txtComposition);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
@@ -66,10 +70,18 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(210, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(364, 585);
             this.panel2.TabIndex = 12;
+            // 
+            // txtNomCommercial
+            // 
+            this.txtNomCommercial.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtNomCommercial.Location = new System.Drawing.Point(21, 159);
+            this.txtNomCommercial.Name = "txtNomCommercial";
+            this.txtNomCommercial.Size = new System.Drawing.Size(321, 20);
+            this.txtNomCommercial.TabIndex = 18;
             // 
             // cmbNomFamille
             // 
@@ -92,42 +104,43 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Nom Famille";
             // 
-            // button2
+            // btnValider
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(21, 461);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(320, 29);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Valider";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnValider.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnValider.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValider.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnValider.Location = new System.Drawing.Point(21, 461);
+            this.btnValider.Margin = new System.Windows.Forms.Padding(2);
+            this.btnValider.Name = "btnValider";
+            this.btnValider.Size = new System.Drawing.Size(320, 29);
+            this.btnValider.TabIndex = 12;
+            this.btnValider.Text = "Valider";
+            this.btnValider.UseVisualStyleBackColor = false;
+            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
             // 
-            // textBox6
+            // txtContreIndications
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox6.Location = new System.Drawing.Point(22, 346);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(321, 20);
-            this.textBox6.TabIndex = 11;
+            this.txtContreIndications.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtContreIndications.Location = new System.Drawing.Point(22, 346);
+            this.txtContreIndications.Name = "txtContreIndications";
+            this.txtContreIndications.Size = new System.Drawing.Size(321, 20);
+            this.txtContreIndications.TabIndex = 11;
             // 
-            // textBox5
+            // txtEffets
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox5.Location = new System.Drawing.Point(22, 288);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(321, 20);
-            this.textBox5.TabIndex = 10;
+            this.txtEffets.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtEffets.Location = new System.Drawing.Point(22, 288);
+            this.txtEffets.Name = "txtEffets";
+            this.txtEffets.Size = new System.Drawing.Size(321, 20);
+            this.txtEffets.TabIndex = 10;
             // 
-            // textBox4
+            // txtComposition
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox4.Location = new System.Drawing.Point(22, 226);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(321, 20);
-            this.textBox4.TabIndex = 9;
+            this.txtComposition.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtComposition.Location = new System.Drawing.Point(22, 226);
+            this.txtComposition.Name = "txtComposition";
+            this.txtComposition.Size = new System.Drawing.Size(321, 20);
+            this.txtComposition.TabIndex = 9;
             // 
             // label10
             // 
@@ -170,19 +183,19 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label7.Location = new System.Drawing.Point(18, 139);
+            this.label7.Location = new System.Drawing.Point(19, 79);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(138, 17);
+            this.label7.Size = new System.Drawing.Size(119, 17);
             this.label7.TabIndex = 5;
-            this.label7.Text = "Nom Commercial";
+            this.label7.Text = "id Medicament";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(17, 39);
+            this.label6.Location = new System.Drawing.Point(75, 28);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(213, 18);
@@ -195,7 +208,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(213, 585);
             this.panel1.TabIndex = 13;
@@ -204,20 +217,32 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(25, 212);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(170, 131);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // txtNomCommercial
+            // label2
             // 
-            this.txtNomCommercial.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtNomCommercial.Location = new System.Drawing.Point(21, 159);
-            this.txtNomCommercial.Name = "txtNomCommercial";
-            this.txtNomCommercial.Size = new System.Drawing.Size(321, 20);
-            this.txtNomCommercial.TabIndex = 18;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label2.Location = new System.Drawing.Point(19, 139);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 17);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Nom Commercial";
+            // 
+            // textIdMedicament
+            // 
+            this.textIdMedicament.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textIdMedicament.Location = new System.Drawing.Point(20, 99);
+            this.textIdMedicament.Name = "textIdMedicament";
+            this.textIdMedicament.Size = new System.Drawing.Size(118, 20);
+            this.textIdMedicament.TabIndex = 20;
             // 
             // FrmNewMedicement
             // 
@@ -241,10 +266,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox cmbNomFamille;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button btnValider;
+        private System.Windows.Forms.TextBox txtContreIndications;
+        private System.Windows.Forms.TextBox txtEffets;
+        private System.Windows.Forms.TextBox txtComposition;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -253,5 +278,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtNomCommercial;
+        private System.Windows.Forms.TextBox textIdMedicament;
+        private System.Windows.Forms.Label label2;
     }
 }

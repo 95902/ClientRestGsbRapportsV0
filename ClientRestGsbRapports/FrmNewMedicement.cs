@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Net; // pour WbClient
 using mdlGsbRapports;
 using Newtonsoft.Json;          // pour la gestion du format Json
+using System.Collections.Specialized;
 
 namespace ClientRestGsbRapports
 {
@@ -24,25 +25,57 @@ namespace ClientRestGsbRapports
         {
             InitializeComponent();
             this.laSecretaire = s;
-            string mdpHas = s.getHashTicketMdp();
+            string mdpHas = s.getHashTicketMdp(); //  récupération du ticket
             this.wb = new WebClient();
             this.site = "http://localhost/restGSB/";
-           
-            this.url = this.site + "familles?ticket=" + mdpHas;
+            this.url = this.site + "familles?ticket=" + mdpHas;//Url 
             string data = this.wb.DownloadString(url);
-            dynamic d = JsonConvert.DeserializeObject(data);
-            this.laSecretaire.ticket = d.ticket;
-            // this.laSecretaire
-            string familles = d.familles.ToString();//liste de familles
-
-            List<Famille> l = JsonConvert.DeserializeObject<List<Famille>>(familles);
-            cmbNomFamille.DataSource = l;
+            dynamic d = JsonConvert.DeserializeObject(data);//Deserialisation  avec un objet dynamic
+            this.laSecretaire.ticket = d.ticket;//Deserialisation du ticket  
+            string familles = d.familles.ToString();//Deserialisation de la liste
+            List<Famille> l = JsonConvert.DeserializeObject<List<Famille>>(familles);//liste de familles
+            cmbNomFamille.DataSource = l;// Chargement de la liste  
             cmbNomFamille.ValueMember = "id";
             cmbNomFamille.DisplayMember = "libelle";
-            /* dataGridView1.DataSource = l*/
-            ;//chargement de dataGridview
 
         }
 
-    }  
+        private void btnValider_Click(object sender, EventArgs e)
+        {
+            try  // code pour l'ajout d'un medicament 
+            {
+                this.url = this.site + "medicaments"; // url 
+                NameValueCollection parametres = new NameValueCollection(); // 
+                string mdpHas = this.laSecretaire.getHashTicketMdp();// récupération du ticket
+                string idFamille = cmbNomFamille.SelectedValue.ToString();// récupération de idFamille
+                parametres.Add("ticket", mdpHas);//
+                parametres.Add("idMedicament", this.textIdMedicament.Text.ToUpper());
+                parametres.Add("nomCommercial", this.txtNomCommercial.Text);
+                parametres.Add("effets", this.txtEffets.Text);
+                parametres.Add("contreIndications", this.txtContreIndications.Text);
+                parametres.Add("composition", this.txtComposition.Text);
+                parametres.Add("idFamille", idFamille);
+                byte[] tabByte = wb.UploadValues(url, "POST", parametres);
+                string reponse = UnicodeEncoding.UTF8.GetString(tabByte);
+                string ticket = reponse.Substring(2, reponse.Length - 2);
+                MessageBox.Show(reponse);
+
+
+            }
+            catch (WebException ex)
+            {
+                if (ex.Response is HttpWebResponse)
+                    MessageBox.Show(((HttpWebResponse)ex.Response).StatusCode.ToString());
+            }
+
+        //    Ajout d’un médicament
+        //URL: gsbRapports / medicaments
+        //Paramètres: ticket =< ticket > idMedicament =< id > effets =< effets > contreIndications =< cid > composition =< compo idFamille =< id >
+        //     exemple : http://localhost/restGSB/medicaments
+        //    ticket = 4nblbv5zttybtvd3ygx idMedicament = RET12 effets = aucuns contreIndications = aucunes composition = beaucoup de composants
+        //    idFamille = AAA
+        }
+
+      
+    }
 }
