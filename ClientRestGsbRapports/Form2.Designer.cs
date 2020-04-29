@@ -569,7 +569,7 @@
             this.gunaAdvenceButton9.Image = null;
             this.gunaAdvenceButton9.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton9.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton9.Location = new System.Drawing.Point(380, 0);
+            this.gunaAdvenceButton9.Location = new System.Drawing.Point(421, 0);
             this.gunaAdvenceButton9.Name = "gunaAdvenceButton9";
             this.gunaAdvenceButton9.OnHoverBaseColor = System.Drawing.SystemColors.ButtonShadow;
             this.gunaAdvenceButton9.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -577,7 +577,7 @@
             this.gunaAdvenceButton9.OnHoverImage = null;
             this.gunaAdvenceButton9.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceButton9.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton9.Size = new System.Drawing.Size(197, 63);
+            this.gunaAdvenceButton9.Size = new System.Drawing.Size(156, 63);
             this.gunaAdvenceButton9.TabIndex = 5;
             this.gunaAdvenceButton9.Text = " esffrghtreth";
             this.gunaAdvenceButton9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -596,44 +596,44 @@
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.SystemColors.Highlight;
             this.gunaLabel4.Location = new System.Drawing.Point(178, 20);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(81, 17);
+            this.gunaLabel4.Size = new System.Drawing.Size(88, 18);
             this.gunaLabel4.TabIndex = 9;
             this.gunaLabel4.Text = "okkkkkkk";
             // 
             // gunaLabel5
             // 
             this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel5.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.ForeColor = System.Drawing.SystemColors.Highlight;
             this.gunaLabel5.Location = new System.Drawing.Point(283, 20);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(81, 17);
+            this.gunaLabel5.Size = new System.Drawing.Size(88, 18);
             this.gunaLabel5.TabIndex = 10;
             this.gunaLabel5.Text = "okkkkkkk";
             // 
             // gunaLabel6
             // 
             this.gunaLabel6.AutoSize = true;
-            this.gunaLabel6.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel6.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel6.ForeColor = System.Drawing.SystemColors.Highlight;
             this.gunaLabel6.Location = new System.Drawing.Point(386, 20);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(81, 17);
+            this.gunaLabel6.Size = new System.Drawing.Size(88, 18);
             this.gunaLabel6.TabIndex = 11;
             this.gunaLabel6.Text = "okkkkkkk";
             // 
             // gunaLabel7
             // 
             this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel7.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel7.ForeColor = System.Drawing.SystemColors.Highlight;
             this.gunaLabel7.Location = new System.Drawing.Point(480, 20);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(81, 17);
+            this.gunaLabel7.Size = new System.Drawing.Size(88, 18);
             this.gunaLabel7.TabIndex = 1;
             this.gunaLabel7.Text = "okkkkkkk";
             // 
