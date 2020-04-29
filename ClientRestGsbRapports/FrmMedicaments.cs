@@ -21,18 +21,19 @@ namespace ClientRestGsbRapports
         private Secretaire laSecretaire;
         private string url;
         private Medicament leMedicament;
-        public FrmMedicaments(Medicament e)
+        public FrmMedicaments(Medicament e, Secretaire s)
         {
             InitializeComponent();
 
             this.leMedicament = e;
             this.wb = new WebClient();
             this.site = "http://localhost/restGSB/";
-            
+            this.laSecretaire = s;
             this.txtComposition.Text += e.composition;
             this.txtContreIndication.Text = e.contreIndications;
             this.txtEffets.Text = e.effets;
             this.txtNonComercial.Text = e.nomCommercial;
+            txtIdMedicament.Text = e.id;
 
         }
 
@@ -42,23 +43,28 @@ namespace ClientRestGsbRapports
             try
             {
                 string mdpHas = this.laSecretaire.getHashTicketMdp();
-                this.url = this.site + "medicaments?ticket=" + mdpHas;
+                this.url = this.site + "medicament";
                 NameValueCollection parametres = new NameValueCollection();
                 parametres.Add("ticket", mdpHas);
-                parametres.Add("idMedicament",leMedicament.id );
-                parametres.Add("effets", this.txtEffets.Text);
-                parametres.Add("contreIndications", this.txtContreIndication.Text);
-                parametres.Add("composition", this.txtContreIndication.Text);
-
+                parametres.Add("idMedicament",txtIdMedicament.Text );
+                parametres.Add("effets", txtEffets.Text);
+                parametres.Add("contreIndications", txtContreIndication.Text);
+                parametres.Add("composition", txtContreIndication.Text);
                 byte[] tabByte = wb.UploadValues(url, "POST", parametres);
                 string reponse = UnicodeEncoding.UTF8.GetString(tabByte);
+                string ticket = reponse.Substring(2, reponse.Length - 2);
+                MessageBox.Show(reponse);
             }
             catch (WebException ex)
             {
                 if (ex.Response is HttpWebResponse)
-                    MessageBox.Show("mise a jour");
+                    MessageBox.Show(((HttpWebResponse)ex.Response).StatusCode.ToString());
             }
-
+            //Mise à jour d’un médicament(effets, contre-indications, composition ) à partir de son id
+            //URL : gsbRapports / medicament
+            //Paramètres: ticket =< ticket > idMedicament =< id > effets =< effets > contreIndications =< cid > composition =< compo >
+            //exemple : http://localhost/restGSB/medicament
+            //ticket = 4nblbv5zttybtvd3ygx idMedicament = A123 effets = aucuns contreIndications = aucune composition = très compliquée
         }
     }
 }

@@ -66,7 +66,7 @@ namespace ClientRestGsbRapports
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             this.leMedicament = (Medicament)this.dataGridView1.CurrentRow.DataBoundItem;
-             FrmMedicaments f = new FrmMedicaments(this.leMedicament);
+             FrmMedicaments f = new FrmMedicaments(this.leMedicament,this.laSecretaire);
                f.Show();
         }
     }
