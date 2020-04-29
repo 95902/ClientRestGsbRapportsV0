@@ -237,12 +237,12 @@
             // btnValider
             // 
             this.btnValider.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnValider.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValider.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValider.ForeColor = System.Drawing.SystemColors.Control;
             this.btnValider.Location = new System.Drawing.Point(29, 379);
             this.btnValider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(295, 34);
+            this.btnValider.Size = new System.Drawing.Size(331, 34);
             this.btnValider.TabIndex = 6;
             this.btnValider.Text = "Valider";
             this.btnValider.UseVisualStyleBackColor = false;
@@ -252,9 +252,9 @@
             // 
             this.txtMdp.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtMdp.Location = new System.Drawing.Point(29, 304);
-            this.txtMdp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMdp.Margin = new System.Windows.Forms.Padding(4);
             this.txtMdp.Name = "txtMdp";
-            this.txtMdp.Size = new System.Drawing.Size(295, 22);
+            this.txtMdp.Size = new System.Drawing.Size(331, 22);
             this.txtMdp.TabIndex = 5;
             // 
             // label1
@@ -273,9 +273,9 @@
             // 
             this.txtLogin.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtLogin.Location = new System.Drawing.Point(29, 208);
-            this.txtLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLogin.Margin = new System.Windows.Forms.Padding(4);
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(295, 22);
+            this.txtLogin.Size = new System.Drawing.Size(331, 22);
             this.txtLogin.TabIndex = 3;
             // 
             // label4
@@ -302,7 +302,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Gestion des rapports de visite";
             this.menuStrip1.ResumeLayout(false);

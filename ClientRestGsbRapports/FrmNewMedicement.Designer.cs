@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNewMedicement));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textIdMedicament = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtNomCommercial = new System.Windows.Forms.TextBox();
             this.cmbNomFamille = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,8 +46,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textIdMedicament = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,27 +69,49 @@
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(210, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(280, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(364, 585);
+            this.panel2.Size = new System.Drawing.Size(485, 720);
             this.panel2.TabIndex = 12;
+            // 
+            // textIdMedicament
+            // 
+            this.textIdMedicament.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textIdMedicament.Location = new System.Drawing.Point(29, 180);
+            this.textIdMedicament.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textIdMedicament.Name = "textIdMedicament";
+            this.textIdMedicament.Size = new System.Drawing.Size(427, 22);
+            this.textIdMedicament.TabIndex = 20;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label2.Location = new System.Drawing.Point(25, 219);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(171, 20);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Nom Commercial";
             // 
             // txtNomCommercial
             // 
             this.txtNomCommercial.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtNomCommercial.Location = new System.Drawing.Point(21, 159);
+            this.txtNomCommercial.Location = new System.Drawing.Point(29, 261);
+            this.txtNomCommercial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNomCommercial.Name = "txtNomCommercial";
-            this.txtNomCommercial.Size = new System.Drawing.Size(321, 20);
+            this.txtNomCommercial.Size = new System.Drawing.Size(427, 22);
             this.txtNomCommercial.TabIndex = 18;
             // 
             // cmbNomFamille
             // 
             this.cmbNomFamille.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cmbNomFamille.FormattingEnabled = true;
-            this.cmbNomFamille.Location = new System.Drawing.Point(22, 413);
+            this.cmbNomFamille.Location = new System.Drawing.Point(29, 544);
+            this.cmbNomFamille.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbNomFamille.Name = "cmbNomFamille";
-            this.cmbNomFamille.Size = new System.Drawing.Size(321, 21);
+            this.cmbNomFamille.Size = new System.Drawing.Size(427, 24);
             this.cmbNomFamille.TabIndex = 17;
             // 
             // label1
@@ -97,10 +119,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(18, 389);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(25, 505);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 17);
+            this.label1.Size = new System.Drawing.Size(128, 20);
             this.label1.TabIndex = 13;
             this.label1.Text = "Nom Famille";
             // 
@@ -109,10 +130,10 @@
             this.btnValider.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnValider.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValider.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnValider.Location = new System.Drawing.Point(21, 461);
-            this.btnValider.Margin = new System.Windows.Forms.Padding(2);
+            this.btnValider.Location = new System.Drawing.Point(29, 603);
+            this.btnValider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(320, 29);
+            this.btnValider.Size = new System.Drawing.Size(427, 36);
             this.btnValider.TabIndex = 12;
             this.btnValider.Text = "Valider";
             this.btnValider.UseVisualStyleBackColor = false;
@@ -121,25 +142,28 @@
             // txtContreIndications
             // 
             this.txtContreIndications.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtContreIndications.Location = new System.Drawing.Point(22, 346);
+            this.txtContreIndications.Location = new System.Drawing.Point(29, 468);
+            this.txtContreIndications.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtContreIndications.Name = "txtContreIndications";
-            this.txtContreIndications.Size = new System.Drawing.Size(321, 20);
+            this.txtContreIndications.Size = new System.Drawing.Size(427, 22);
             this.txtContreIndications.TabIndex = 11;
             // 
             // txtEffets
             // 
             this.txtEffets.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtEffets.Location = new System.Drawing.Point(22, 288);
+            this.txtEffets.Location = new System.Drawing.Point(29, 400);
+            this.txtEffets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEffets.Name = "txtEffets";
-            this.txtEffets.Size = new System.Drawing.Size(321, 20);
+            this.txtEffets.Size = new System.Drawing.Size(427, 22);
             this.txtEffets.TabIndex = 10;
             // 
             // txtComposition
             // 
             this.txtComposition.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtComposition.Location = new System.Drawing.Point(22, 226);
+            this.txtComposition.Location = new System.Drawing.Point(29, 325);
+            this.txtComposition.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtComposition.Name = "txtComposition";
-            this.txtComposition.Size = new System.Drawing.Size(321, 20);
+            this.txtComposition.Size = new System.Drawing.Size(427, 22);
             this.txtComposition.TabIndex = 9;
             // 
             // label10
@@ -147,10 +171,9 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label10.Location = new System.Drawing.Point(18, 323);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(25, 431);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(153, 17);
+            this.label10.Size = new System.Drawing.Size(186, 20);
             this.label10.TabIndex = 8;
             this.label10.Text = "Contre Indications";
             // 
@@ -159,10 +182,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label9.Location = new System.Drawing.Point(18, 265);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(25, 361);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 17);
+            this.label9.Size = new System.Drawing.Size(64, 20);
             this.label9.TabIndex = 7;
             this.label9.Text = "Effets";
             // 
@@ -171,10 +193,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label8.Location = new System.Drawing.Point(18, 202);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(25, 289);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 17);
+            this.label8.Size = new System.Drawing.Size(129, 20);
             this.label8.TabIndex = 6;
             this.label8.Text = "Composition";
             // 
@@ -183,10 +204,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label7.Location = new System.Drawing.Point(19, 79);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(25, 134);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 17);
+            this.label7.Size = new System.Drawing.Size(148, 20);
             this.label7.TabIndex = 5;
             this.label7.Text = "id Medicament";
             // 
@@ -195,10 +215,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(75, 28);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(24, 37);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(213, 18);
+            this.label6.Size = new System.Drawing.Size(275, 25);
             this.label6.TabIndex = 4;
             this.label6.Text = "Ajouter un medicament";
             // 
@@ -208,49 +227,30 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 585);
+            this.panel1.Size = new System.Drawing.Size(284, 720);
             this.panel1.TabIndex = 13;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 212);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 261);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(170, 131);
+            this.pictureBox1.Size = new System.Drawing.Size(227, 161);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(19, 139);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 17);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Nom Commercial";
-            // 
-            // textIdMedicament
-            // 
-            this.textIdMedicament.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textIdMedicament.Location = new System.Drawing.Point(20, 99);
-            this.textIdMedicament.Name = "textIdMedicament";
-            this.textIdMedicament.Size = new System.Drawing.Size(118, 20);
-            this.textIdMedicament.TabIndex = 20;
-            // 
             // FrmNewMedicement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(574, 585);
+            this.ClientSize = new System.Drawing.Size(765, 720);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmNewMedicement";
             this.Text = "AjouterMedicament2";
             this.panel2.ResumeLayout(false);
