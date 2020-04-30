@@ -106,5 +106,7 @@ namespace ClientRestGsbRapports
             FormGererMedicament g = new FormGererMedicament(this.laSecretaire);
             g.Show();
         }
+
+        
     }
 }

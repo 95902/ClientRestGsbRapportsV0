@@ -2374,4 +2374,7 @@
         dU6Znt8AAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="medicamentBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>18, 15</value>
+  </metadata>
 </root>
