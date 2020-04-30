@@ -69,6 +69,11 @@ namespace ClientRestGsbRapports
              FrmMedicaments f = new FrmMedicaments(this.leMedicament,this.laSecretaire);
                f.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 
