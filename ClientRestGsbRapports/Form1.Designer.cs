@@ -91,7 +91,7 @@
             this.familleToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(658, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(658, 30);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -100,7 +100,7 @@
             this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quitterToolStripMenuItem});
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
-            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
+            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(66, 26);
             this.fichierToolStripMenuItem.Text = "Fichier";
             // 
             // quitterToolStripMenuItem
@@ -113,13 +113,13 @@
             // médecinsToolStripMenuItem
             // 
             this.médecinsToolStripMenuItem.Name = "médecinsToolStripMenuItem";
-            this.médecinsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.médecinsToolStripMenuItem.Size = new System.Drawing.Size(86, 26);
             this.médecinsToolStripMenuItem.Text = "Médecins";
             // 
             // rapportsToolStripMenuItem
             // 
             this.rapportsToolStripMenuItem.Name = "rapportsToolStripMenuItem";
-            this.rapportsToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.rapportsToolStripMenuItem.Size = new System.Drawing.Size(65, 26);
             this.rapportsToolStripMenuItem.Text = "Visites";
             // 
             // médicamentsToolStripMenuItem
@@ -127,7 +127,7 @@
             this.médicamentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gérerLesMédicamentsToolStripMenuItem});
             this.médicamentsToolStripMenuItem.Name = "médicamentsToolStripMenuItem";
-            this.médicamentsToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
+            this.médicamentsToolStripMenuItem.Size = new System.Drawing.Size(112, 26);
             this.médicamentsToolStripMenuItem.Text = "Médicaments";
             // 
             // gérerLesMédicamentsToolStripMenuItem
@@ -140,7 +140,7 @@
             // visiteursToolStripMenuItem
             // 
             this.visiteursToolStripMenuItem.Name = "visiteursToolStripMenuItem";
-            this.visiteursToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.visiteursToolStripMenuItem.Size = new System.Drawing.Size(78, 26);
             this.visiteursToolStripMenuItem.Text = "Visiteurs";
             // 
             // familleToolStripMenuItem
@@ -150,7 +150,7 @@
             this.modifierToolStripMenuItem,
             this.ajouterToolStripMenuItem});
             this.familleToolStripMenuItem.Name = "familleToolStripMenuItem";
-            this.familleToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.familleToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
             this.familleToolStripMenuItem.Text = "Famille";
             // 
             // voirToolStripMenuItem
@@ -179,10 +179,10 @@
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 28);
+            this.panel1.Location = new System.Drawing.Point(0, 30);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(252, 596);
+            this.panel1.Size = new System.Drawing.Size(252, 594);
             this.panel1.TabIndex = 9;
             // 
             // pictureBox1
@@ -207,10 +207,10 @@
             this.panel2.Controls.Add(this.txtLogin);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(246, 28);
+            this.panel2.Location = new System.Drawing.Point(246, 30);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(412, 596);
+            this.panel2.Size = new System.Drawing.Size(412, 594);
             this.panel2.TabIndex = 10;
             // 
             // lblNom
