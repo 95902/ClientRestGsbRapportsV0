@@ -20,32 +20,32 @@ namespace ClientRestGsbRapports
         private WebClient wb;
         private Secretaire laSecretaire;
         private string url;
+        private Famille laFamille;
 
         public FrmMajFamille(Secretaire s)
         {
             InitializeComponent();
             this.laSecretaire = s;
-            string mdpHas = s.getHashTicketMdp();
             this.wb = new WebClient();
             this.site = "http://localhost/restGSB/";
-            this.url = this.site + "familles?ticket=" + mdpHas;
-            string data = this.wb.DownloadString(url);
-            dynamic d = JsonConvert.DeserializeObject(data);
+            string url = this.site + "familles?ticket=";
+            string hash = this.laSecretaire.getHashTicketMdp();
+            url += hash;
+            string reponse = this.wb.DownloadString(url);
+            dynamic d = JsonConvert.DeserializeObject(reponse);
             this.laSecretaire.ticket = d.ticket;
-            // this.laSecretaire
-
-            string familles = d.familles.ToString();
-
-            List<Famille> l = JsonConvert.DeserializeObject<List<Famille>>(familles);
-            cmbFamille.DataSource = l;
-            cmbFamille.ValueMember = "id";
-            cmbFamille.DisplayMember = "libelle";
+            string lesfamilles = d.familles.ToString();
+            List<Famille> l = JsonConvert.DeserializeObject<List<Famille>>(lesfamilles);
+            this.cmbFamille.DataSource = l;
+            this.cmbFamille.ValueMember = "id";
+            this.cmbFamille.DisplayMember = "libelle";
 
         }
 
         private void cmbFamille_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string idFamille = cmbFamille.SelectedIndex.ToString();
+            laFamille = (Famille)cmbFamille.SelectedItem;
+            txtFamille.Text = this.laFamille.libelle;
             // code pour remplir le TextBox
         }
 
@@ -53,16 +53,17 @@ namespace ClientRestGsbRapports
         {
             try
             {
-                string mdpHas = this.laSecretaire.getHashTicketMdp();
-                this.url = this.site + "famille" + mdpHas;
+                string url;
+                url = this.site + "famille";
                 NameValueCollection parametres = new NameValueCollection();
-                string idFamille = cmbFamille.SelectedIndex.ToString();
-                parametres.Add("ticket", mdpHas);
-                parametres.Add("idFamille", idFamille);
+                parametres.Add("idFamille", this.laFamille.id);
                 parametres.Add("libelle", this.txtFamille.Text);
+                parametres.Add("ticket", this.laSecretaire.getHashTicketMdp());
                 byte[] tabByte = wb.UploadValues(url, "POST", parametres);
                 string reponse = UnicodeEncoding.UTF8.GetString(tabByte);
-            
+                string ticket = reponse.Substring(2, reponse.Length - 2);
+                this.laSecretaire.ticket = ticket;
+
 
                 // code pour la mise à jour
             }
