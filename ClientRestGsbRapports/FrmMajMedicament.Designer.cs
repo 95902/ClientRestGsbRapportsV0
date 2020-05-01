@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMajMedicament));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.gbtnValider = new Guna.UI.WinForms.GunaButton();
             this.gtxtEffets = new Guna.UI.WinForms.GunaTextBox();
             this.gtxtComposition = new Guna.UI.WinForms.GunaTextBox();
             this.gtxtContreIndications = new Guna.UI.WinForms.GunaTextBox();
@@ -49,7 +48,6 @@
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
             this.panel2.Controls.Add(this.gunaButton1);
             this.panel2.Controls.Add(this.gcmbFamille);
-            this.panel2.Controls.Add(this.gbtnValider);
             this.panel2.Controls.Add(this.gtxtEffets);
             this.panel2.Controls.Add(this.gtxtComposition);
             this.panel2.Controls.Add(this.gtxtContreIndications);
@@ -63,31 +61,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(583, 633);
             this.panel2.TabIndex = 12;
-            // 
-            // gbtnValider
-            // 
-            this.gbtnValider.AnimationHoverSpeed = 0.07F;
-            this.gbtnValider.AnimationSpeed = 0.03F;
-            this.gbtnValider.BackColor = System.Drawing.Color.Transparent;
-            this.gbtnValider.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
-            this.gbtnValider.BorderColor = System.Drawing.Color.Black;
-            this.gbtnValider.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gbtnValider.FocusedColor = System.Drawing.Color.Empty;
-            this.gbtnValider.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbtnValider.ForeColor = System.Drawing.Color.White;
-            this.gbtnValider.Image = ((System.Drawing.Image)(resources.GetObject("gbtnValider.Image")));
-            this.gbtnValider.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnValider.Location = new System.Drawing.Point(544, 531);
-            this.gbtnValider.Name = "gbtnValider";
-            this.gbtnValider.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
-            this.gbtnValider.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gbtnValider.OnHoverForeColor = System.Drawing.Color.White;
-            this.gbtnValider.OnHoverImage = null;
-            this.gbtnValider.OnPressedColor = System.Drawing.Color.Black;
-            this.gbtnValider.Radius = 15;
-            this.gbtnValider.Size = new System.Drawing.Size(145, 29);
-            this.gbtnValider.TabIndex = 39;
-            this.gbtnValider.Text = "Valider";
             // 
             // gtxtEffets
             // 
@@ -228,7 +201,7 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(213, 450);
+            this.gunaButton1.Location = new System.Drawing.Point(228, 480);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -264,7 +237,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI.WinForms.GunaButton gbtnValider;
         private Guna.UI.WinForms.GunaTextBox gtxtEffets;
         private Guna.UI.WinForms.GunaTextBox gtxtComposition;
         private Guna.UI.WinForms.GunaTextBox gtxtContreIndications;
