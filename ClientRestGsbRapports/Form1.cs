@@ -33,42 +33,9 @@ namespace ClientRestGsbRapports
 
         private void btnValider_Click_1(object sender, EventArgs e)
         {
-            string mdp = this.txtMdp.Text;
-            string login = this.txtLogin.Text;
-            string reponse; // la réponse retournée  par le serveur
-            /* Création de la requête*/
-            string url = this.site + "login?login=" + login;
-            /*Appel à l'objet wb pour récupérer le résultat de la requête*/
-            reponse = this.wb.DownloadString(url);
-            /* récupération, après désérialisation et conversion*/
-            this.ticket = (string)JsonConvert.DeserializeObject(reponse);
-            if (this.ticket == null)
-                MessageBox.Show("erreur de Login");
-            else
-            {
-                this.laSecretaire.ticket = this.ticket;
-                this.laSecretaire.mdp = mdp;
-                /* on appelle la fonction de la classe secrétaire qui va hashe ticket+mdp */
-                string hash = this.laSecretaire.getHashTicketMdp();
-                /*On crée la requête*/
-                url = this.site + "connexion?login=" + login + "&mdp=" + hash;
-                /* On récupère la réponse du serveur de type json */
-                reponse = this.wb.DownloadString(url);
-                /*On transforme la réponse json en objet Secrétaire!!*/
-                Secretaire s = JsonConvert.DeserializeObject<Secretaire>(reponse);
-                if (s == null)
-                    MessageBox.Show("erreur de mot de passe!!");
-                else
-                {
-                    /* On renseigne le champ de la secrétaire pour la passer aux formulaires*/
-                    this.laSecretaire.nom = s.nom;
-                    this.laSecretaire.prenom = s.prenom;
-                    this.laSecretaire.mdp = this.txtMdp.Text;
-                    this.laSecretaire.ticket = s.ticket;
-                    this.lblNom.Text = "Bonjour " + this.laSecretaire.prenom + " " + this.laSecretaire.nom;
-                    this.menuStrip1.Visible = true;
-                }
-            }
+            
+                
+            
         }
 
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
@@ -107,6 +74,54 @@ namespace ClientRestGsbRapports
             g.Show();
         }
 
-      
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gunaPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbtnValider_Click(object sender, EventArgs e)
+        {
+            string mdp = this.gtxtMdp.Text;
+            string login = this.gtxtLogin.Text;
+            string reponse; // la réponse retournée  par le serveur
+            /* Création de la requête*/
+            string url = this.site + "login?login=" + login;
+            /*Appel à l'objet wb pour récupérer le résultat de la requête*/
+            reponse = this.wb.DownloadString(url);
+            /* récupération, après désérialisation et conversion*/
+            this.ticket = (string)JsonConvert.DeserializeObject(reponse);
+            if (this.ticket == null)
+                MessageBox.Show("erreur de Login");
+            else
+            {
+                this.laSecretaire.ticket = this.ticket;
+                this.laSecretaire.mdp = mdp;
+                /* on appelle la fonction de la classe secrétaire qui va hashe ticket+mdp */
+                string hash = this.laSecretaire.getHashTicketMdp();
+                /*On crée la requête*/
+                url = this.site + "connexion?login=" + login + "&mdp=" + hash;
+                /* On récupère la réponse du serveur de type json */
+                reponse = this.wb.DownloadString(url);
+                /*On transforme la réponse json en objet Secrétaire!!*/
+                Secretaire s = JsonConvert.DeserializeObject<Secretaire>(reponse);
+                if (s == null)
+                    MessageBox.Show("erreur de mot de passe!!");
+                else
+                {
+                    /* On renseigne le champ de la secrétaire pour la passer aux formulaires*/
+                    this.laSecretaire.nom = s.nom;
+                    this.laSecretaire.prenom = s.prenom;
+                    this.laSecretaire.mdp = this.gtxtMdp.Text;
+                    this.laSecretaire.ticket = s.ticket;
+                    this.lblNom.Text = "Bonjour " + this.laSecretaire.prenom + " " + this.laSecretaire.nom;
+                    this.menuStrip1.Visible = true;
+                }
+            }
+        }
     }
 }
