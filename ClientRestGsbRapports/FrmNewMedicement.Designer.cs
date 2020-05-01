@@ -30,150 +30,205 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNewMedicement));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textIdMedicament = new System.Windows.Forms.TextBox();
+            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
+            this.gbtnValider = new Guna.UI.WinForms.GunaButton();
+            this.gtxtContreIndications = new Guna.UI.WinForms.GunaTextBox();
+            this.gtxtEffets = new Guna.UI.WinForms.GunaTextBox();
+            this.gtxtComposition = new Guna.UI.WinForms.GunaTextBox();
+            this.gtxtNomCommercial = new Guna.UI.WinForms.GunaTextBox();
+            this.textIdMedicament = new Guna.UI.WinForms.GunaTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtNomCommercial = new System.Windows.Forms.TextBox();
-            this.cmbNomFamille = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnValider = new System.Windows.Forms.Button();
-            this.txtContreIndications = new System.Windows.Forms.TextBox();
-            this.txtEffets = new System.Windows.Forms.TextBox();
-            this.txtComposition = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.panel2.Controls.Add(this.gunaComboBox1);
+            this.panel2.Controls.Add(this.gbtnValider);
+            this.panel2.Controls.Add(this.gtxtContreIndications);
+            this.panel2.Controls.Add(this.gtxtEffets);
+            this.panel2.Controls.Add(this.gtxtComposition);
+            this.panel2.Controls.Add(this.gtxtNomCommercial);
             this.panel2.Controls.Add(this.textIdMedicament);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.txtNomCommercial);
-            this.panel2.Controls.Add(this.cmbNomFamille);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.btnValider);
-            this.panel2.Controls.Add(this.txtContreIndications);
-            this.panel2.Controls.Add(this.txtEffets);
-            this.panel2.Controls.Add(this.txtComposition);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(280, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(1, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(485, 720);
+            this.panel2.Size = new System.Drawing.Size(573, 508);
             this.panel2.TabIndex = 12;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // gunaComboBox1
+            // 
+            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaComboBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaComboBox1.BorderColor = System.Drawing.Color.Silver;
+            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gunaComboBox1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gunaComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gunaComboBox1.FormattingEnabled = true;
+            this.gunaComboBox1.Location = new System.Drawing.Point(247, 391);
+            this.gunaComboBox1.Name = "gunaComboBox1";
+            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.gunaComboBox1.Size = new System.Drawing.Size(262, 26);
+            this.gunaComboBox1.TabIndex = 28;
+            // 
+            // gbtnValider
+            // 
+            this.gbtnValider.AnimationHoverSpeed = 0.07F;
+            this.gbtnValider.AnimationSpeed = 0.03F;
+            this.gbtnValider.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnValider.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.gbtnValider.BorderColor = System.Drawing.Color.Black;
+            this.gbtnValider.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnValider.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnValider.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbtnValider.ForeColor = System.Drawing.Color.White;
+            this.gbtnValider.Image = ((System.Drawing.Image)(resources.GetObject("gbtnValider.Image")));
+            this.gbtnValider.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnValider.Location = new System.Drawing.Point(324, 456);
+            this.gbtnValider.Name = "gbtnValider";
+            this.gbtnValider.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gbtnValider.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnValider.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnValider.OnHoverImage = null;
+            this.gbtnValider.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnValider.Radius = 15;
+            this.gbtnValider.Size = new System.Drawing.Size(145, 29);
+            this.gbtnValider.TabIndex = 27;
+            this.gbtnValider.Text = "Valider";
+            this.gbtnValider.Click += new System.EventHandler(this.gbtnValider_Click);
+            // 
+            // gtxtContreIndications
+            // 
+            this.gtxtContreIndications.BaseColor = System.Drawing.Color.White;
+            this.gtxtContreIndications.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtContreIndications.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtContreIndications.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtContreIndications.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gtxtContreIndications.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtContreIndications.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtContreIndications.Location = new System.Drawing.Point(247, 317);
+            this.gtxtContreIndications.Name = "gtxtContreIndications";
+            this.gtxtContreIndications.PasswordChar = '\0';
+            this.gtxtContreIndications.SelectedText = "";
+            this.gtxtContreIndications.Size = new System.Drawing.Size(262, 53);
+            this.gtxtContreIndications.TabIndex = 25;
+            // 
+            // gtxtEffets
+            // 
+            this.gtxtEffets.BaseColor = System.Drawing.Color.White;
+            this.gtxtEffets.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtEffets.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtEffets.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtEffets.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gtxtEffets.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtEffets.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtEffets.Location = new System.Drawing.Point(247, 243);
+            this.gtxtEffets.Name = "gtxtEffets";
+            this.gtxtEffets.PasswordChar = '\0';
+            this.gtxtEffets.SelectedText = "";
+            this.gtxtEffets.Size = new System.Drawing.Size(262, 59);
+            this.gtxtEffets.TabIndex = 24;
+            // 
+            // gtxtComposition
+            // 
+            this.gtxtComposition.BaseColor = System.Drawing.Color.White;
+            this.gtxtComposition.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtComposition.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtComposition.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtComposition.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gtxtComposition.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtComposition.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtComposition.Location = new System.Drawing.Point(247, 168);
+            this.gtxtComposition.Name = "gtxtComposition";
+            this.gtxtComposition.PasswordChar = '\0';
+            this.gtxtComposition.SelectedText = "";
+            this.gtxtComposition.Size = new System.Drawing.Size(262, 55);
+            this.gtxtComposition.TabIndex = 23;
+            // 
+            // gtxtNomCommercial
+            // 
+            this.gtxtNomCommercial.BaseColor = System.Drawing.Color.White;
+            this.gtxtNomCommercial.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtNomCommercial.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtNomCommercial.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtNomCommercial.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gtxtNomCommercial.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtNomCommercial.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtNomCommercial.Location = new System.Drawing.Point(247, 122);
+            this.gtxtNomCommercial.Name = "gtxtNomCommercial";
+            this.gtxtNomCommercial.PasswordChar = '\0';
+            this.gtxtNomCommercial.SelectedText = "";
+            this.gtxtNomCommercial.Size = new System.Drawing.Size(262, 30);
+            this.gtxtNomCommercial.TabIndex = 22;
             // 
             // textIdMedicament
             // 
-            this.textIdMedicament.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textIdMedicament.Location = new System.Drawing.Point(29, 180);
-            this.textIdMedicament.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textIdMedicament.BaseColor = System.Drawing.Color.White;
+            this.textIdMedicament.BorderColor = System.Drawing.Color.Silver;
+            this.textIdMedicament.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textIdMedicament.FocusedBaseColor = System.Drawing.Color.White;
+            this.textIdMedicament.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.textIdMedicament.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.textIdMedicament.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.textIdMedicament.Location = new System.Drawing.Point(247, 73);
             this.textIdMedicament.Name = "textIdMedicament";
-            this.textIdMedicament.Size = new System.Drawing.Size(427, 22);
-            this.textIdMedicament.TabIndex = 20;
+            this.textIdMedicament.PasswordChar = '\0';
+            this.textIdMedicament.SelectedText = "";
+            this.textIdMedicament.Size = new System.Drawing.Size(262, 30);
+            this.textIdMedicament.TabIndex = 21;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(25, 219);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label2.Location = new System.Drawing.Point(49, 122);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 20);
+            this.label2.Size = new System.Drawing.Size(138, 17);
             this.label2.TabIndex = 19;
             this.label2.Text = "Nom Commercial";
-            // 
-            // txtNomCommercial
-            // 
-            this.txtNomCommercial.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtNomCommercial.Location = new System.Drawing.Point(29, 261);
-            this.txtNomCommercial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtNomCommercial.Name = "txtNomCommercial";
-            this.txtNomCommercial.Size = new System.Drawing.Size(427, 22);
-            this.txtNomCommercial.TabIndex = 18;
-            // 
-            // cmbNomFamille
-            // 
-            this.cmbNomFamille.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.cmbNomFamille.FormattingEnabled = true;
-            this.cmbNomFamille.Location = new System.Drawing.Point(29, 544);
-            this.cmbNomFamille.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cmbNomFamille.Name = "cmbNomFamille";
-            this.cmbNomFamille.Size = new System.Drawing.Size(427, 24);
-            this.cmbNomFamille.TabIndex = 17;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(25, 505);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label1.Location = new System.Drawing.Point(49, 391);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 20);
+            this.label1.Size = new System.Drawing.Size(101, 17);
             this.label1.TabIndex = 13;
             this.label1.Text = "Nom Famille";
-            // 
-            // btnValider
-            // 
-            this.btnValider.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnValider.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValider.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnValider.Location = new System.Drawing.Point(29, 603);
-            this.btnValider.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(427, 36);
-            this.btnValider.TabIndex = 12;
-            this.btnValider.Text = "Valider";
-            this.btnValider.UseVisualStyleBackColor = false;
-            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
-            // 
-            // txtContreIndications
-            // 
-            this.txtContreIndications.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtContreIndications.Location = new System.Drawing.Point(29, 468);
-            this.txtContreIndications.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtContreIndications.Name = "txtContreIndications";
-            this.txtContreIndications.Size = new System.Drawing.Size(427, 22);
-            this.txtContreIndications.TabIndex = 11;
-            // 
-            // txtEffets
-            // 
-            this.txtEffets.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtEffets.Location = new System.Drawing.Point(29, 400);
-            this.txtEffets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtEffets.Name = "txtEffets";
-            this.txtEffets.Size = new System.Drawing.Size(427, 22);
-            this.txtEffets.TabIndex = 10;
-            // 
-            // txtComposition
-            // 
-            this.txtComposition.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtComposition.Location = new System.Drawing.Point(29, 325);
-            this.txtComposition.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtComposition.Name = "txtComposition";
-            this.txtComposition.Size = new System.Drawing.Size(427, 22);
-            this.txtComposition.TabIndex = 9;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label10.Location = new System.Drawing.Point(25, 431);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label10.Location = new System.Drawing.Point(49, 317);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(186, 20);
+            this.label10.Size = new System.Drawing.Size(153, 17);
             this.label10.TabIndex = 8;
             this.label10.Text = "Contre Indications";
             // 
@@ -181,10 +236,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label9.Location = new System.Drawing.Point(25, 361);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label9.Location = new System.Drawing.Point(49, 243);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 20);
+            this.label9.Size = new System.Drawing.Size(53, 17);
             this.label9.TabIndex = 7;
             this.label9.Text = "Effets";
             // 
@@ -192,10 +248,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label8.Location = new System.Drawing.Point(25, 289);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label8.Location = new System.Drawing.Point(49, 168);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(129, 20);
+            this.label8.Size = new System.Drawing.Size(105, 17);
             this.label8.TabIndex = 6;
             this.label8.Text = "Composition";
             // 
@@ -203,10 +260,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label7.Location = new System.Drawing.Point(25, 134);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label7.Location = new System.Drawing.Point(49, 73);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(148, 20);
+            this.label7.Size = new System.Drawing.Size(119, 17);
             this.label7.TabIndex = 5;
             this.label7.Text = "id Medicament";
             // 
@@ -214,49 +272,24 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(24, 37);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label6.Location = new System.Drawing.Point(152, 22);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(275, 25);
+            this.label6.Size = new System.Drawing.Size(213, 18);
             this.label6.TabIndex = 4;
             this.label6.Text = "Ajouter un medicament";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(284, 720);
-            this.panel1.TabIndex = 13;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(33, 261);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(227, 161);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // FrmNewMedicement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 720);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(574, 508);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmNewMedicement";
             this.Text = "AjouterMedicament2";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -264,21 +297,19 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox cmbNomFamille;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnValider;
-        private System.Windows.Forms.TextBox txtContreIndications;
-        private System.Windows.Forms.TextBox txtEffets;
-        private System.Windows.Forms.TextBox txtComposition;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtNomCommercial;
-        private System.Windows.Forms.TextBox textIdMedicament;
         private System.Windows.Forms.Label label2;
+        private Guna.UI.WinForms.GunaTextBox textIdMedicament;
+        private Guna.UI.WinForms.GunaTextBox gtxtContreIndications;
+        private Guna.UI.WinForms.GunaTextBox gtxtEffets;
+        private Guna.UI.WinForms.GunaTextBox gtxtComposition;
+        private Guna.UI.WinForms.GunaTextBox gtxtNomCommercial;
+        private Guna.UI.WinForms.GunaButton gbtnValider;
+        private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
     }
 }

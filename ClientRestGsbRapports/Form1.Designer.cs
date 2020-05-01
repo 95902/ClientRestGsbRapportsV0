@@ -249,7 +249,7 @@
             this.gbtnValider.AnimationSpeed = 0.03F;
             this.gbtnValider.BackColor = System.Drawing.Color.Transparent;
             this.gbtnValider.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.gbtnValider.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.gbtnValider.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gbtnValider.BorderColor = System.Drawing.Color.Black;
             this.gbtnValider.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gbtnValider.DialogResult = System.Windows.Forms.DialogResult.None;
@@ -261,7 +261,7 @@
             this.gbtnValider.ImageSize = new System.Drawing.Size(25, 25);
             this.gbtnValider.Location = new System.Drawing.Point(274, 205);
             this.gbtnValider.Name = "gbtnValider";
-            this.gbtnValider.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(147)))), ((int)(((byte)(211)))));
+            this.gbtnValider.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
             this.gbtnValider.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gbtnValider.OnHoverForeColor = System.Drawing.Color.White;
             this.gbtnValider.OnHoverImage = null;

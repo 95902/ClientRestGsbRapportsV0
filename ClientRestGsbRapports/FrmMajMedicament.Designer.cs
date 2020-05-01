@@ -29,175 +29,222 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMajMedicament));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.cmbFamille = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gbtnValider = new Guna.UI.WinForms.GunaButton();
+            this.gtxtEffets = new Guna.UI.WinForms.GunaTextBox();
+            this.gtxtComposition = new Guna.UI.WinForms.GunaTextBox();
+            this.gtxtContreIndications = new Guna.UI.WinForms.GunaTextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.gcmbFamille = new Guna.UI.WinForms.GunaComboBox();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(321, 633);
-            this.panel1.TabIndex = 11;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(33, 261);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(226, 161);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
-            this.panel2.Controls.Add(this.cmbFamille);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.gunaButton1);
+            this.panel2.Controls.Add(this.gcmbFamille);
+            this.panel2.Controls.Add(this.gbtnValider);
+            this.panel2.Controls.Add(this.gtxtEffets);
+            this.panel2.Controls.Add(this.gtxtComposition);
+            this.panel2.Controls.Add(this.gtxtContreIndications);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.label15);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(313, 0);
+            this.panel2.Location = new System.Drawing.Point(-41, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(485, 633);
+            this.panel2.Size = new System.Drawing.Size(583, 633);
             this.panel2.TabIndex = 12;
             // 
-            // cmbFamille
+            // gbtnValider
             // 
-            this.cmbFamille.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.cmbFamille.FormattingEnabled = true;
-            this.cmbFamille.Location = new System.Drawing.Point(29, 204);
-            this.cmbFamille.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbFamille.Name = "cmbFamille";
-            this.cmbFamille.Size = new System.Drawing.Size(427, 24);
-            this.cmbFamille.TabIndex = 16;
+            this.gbtnValider.AnimationHoverSpeed = 0.07F;
+            this.gbtnValider.AnimationSpeed = 0.03F;
+            this.gbtnValider.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnValider.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.gbtnValider.BorderColor = System.Drawing.Color.Black;
+            this.gbtnValider.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnValider.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnValider.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbtnValider.ForeColor = System.Drawing.Color.White;
+            this.gbtnValider.Image = ((System.Drawing.Image)(resources.GetObject("gbtnValider.Image")));
+            this.gbtnValider.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnValider.Location = new System.Drawing.Point(544, 531);
+            this.gbtnValider.Name = "gbtnValider";
+            this.gbtnValider.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gbtnValider.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnValider.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnValider.OnHoverImage = null;
+            this.gbtnValider.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnValider.Radius = 15;
+            this.gbtnValider.Size = new System.Drawing.Size(145, 29);
+            this.gbtnValider.TabIndex = 39;
+            this.gbtnValider.Text = "Valider";
             // 
-            // button2
+            // gtxtEffets
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(29, 490);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(427, 36);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Mettre a jour";
-            this.button2.UseVisualStyleBackColor = false;
+            this.gtxtEffets.BaseColor = System.Drawing.Color.White;
+            this.gtxtEffets.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtEffets.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtEffets.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtEffets.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gtxtEffets.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtEffets.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtEffets.Location = new System.Drawing.Point(261, 281);
+            this.gtxtEffets.Name = "gtxtEffets";
+            this.gtxtEffets.PasswordChar = '\0';
+            this.gtxtEffets.SelectedText = "";
+            this.gtxtEffets.Size = new System.Drawing.Size(273, 59);
+            this.gtxtEffets.TabIndex = 37;
             // 
-            // textBox6
+            // gtxtComposition
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox6.Location = new System.Drawing.Point(29, 435);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(427, 22);
-            this.textBox6.TabIndex = 11;
+            this.gtxtComposition.BaseColor = System.Drawing.Color.White;
+            this.gtxtComposition.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtComposition.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtComposition.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtComposition.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gtxtComposition.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtComposition.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtComposition.Location = new System.Drawing.Point(261, 187);
+            this.gtxtComposition.Name = "gtxtComposition";
+            this.gtxtComposition.PasswordChar = '\0';
+            this.gtxtComposition.SelectedText = "";
+            this.gtxtComposition.Size = new System.Drawing.Size(273, 55);
+            this.gtxtComposition.TabIndex = 36;
             // 
-            // textBox5
+            // gtxtContreIndications
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox5.Location = new System.Drawing.Point(29, 355);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(427, 22);
-            this.textBox5.TabIndex = 10;
+            this.gtxtContreIndications.BaseColor = System.Drawing.Color.White;
+            this.gtxtContreIndications.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtContreIndications.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtContreIndications.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtContreIndications.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gtxtContreIndications.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtContreIndications.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtContreIndications.Location = new System.Drawing.Point(261, 374);
+            this.gtxtContreIndications.Name = "gtxtContreIndications";
+            this.gtxtContreIndications.PasswordChar = '\0';
+            this.gtxtContreIndications.SelectedText = "";
+            this.gtxtContreIndications.Size = new System.Drawing.Size(273, 52);
+            this.gtxtContreIndications.TabIndex = 35;
             // 
-            // textBox4
+            // label11
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox4.Location = new System.Drawing.Point(29, 278);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(427, 22);
-            this.textBox4.TabIndex = 9;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label11.Location = new System.Drawing.Point(58, 374);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(153, 17);
+            this.label11.TabIndex = 33;
+            this.label11.Text = "Contre Indications";
             // 
-            // label10
+            // label12
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label10.Location = new System.Drawing.Point(25, 402);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(186, 20);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Contre Indications";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label12.Location = new System.Drawing.Point(73, 281);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(53, 17);
+            this.label12.TabIndex = 32;
+            this.label12.Text = "Effets";
             // 
-            // label9
+            // label13
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label9.Location = new System.Drawing.Point(24, 326);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 20);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Effets";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label13.Location = new System.Drawing.Point(73, 187);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(105, 17);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "Composition";
             // 
-            // label8
+            // label14
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label8.Location = new System.Drawing.Point(24, 249);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(129, 20);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Composition";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label14.Location = new System.Drawing.Point(73, 91);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(138, 17);
+            this.label14.TabIndex = 30;
+            this.label14.Text = "Nom Commercial";
             // 
-            // label7
+            // label15
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label7.Location = new System.Drawing.Point(24, 164);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(171, 20);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Nom Commercial";
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label15.Location = new System.Drawing.Point(225, 35);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(113, 18);
+            this.label15.TabIndex = 29;
+            this.label15.Text = "Modification";
             // 
-            // label6
+            // gcmbFamille
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(24, 35);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(150, 25);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Modification";
+            this.gcmbFamille.BackColor = System.Drawing.Color.Transparent;
+            this.gcmbFamille.BaseColor = System.Drawing.Color.White;
+            this.gcmbFamille.BorderColor = System.Drawing.Color.Silver;
+            this.gcmbFamille.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gcmbFamille.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gcmbFamille.FocusedColor = System.Drawing.Color.Empty;
+            this.gcmbFamille.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gcmbFamille.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gcmbFamille.FormattingEnabled = true;
+            this.gcmbFamille.Location = new System.Drawing.Point(261, 91);
+            this.gcmbFamille.Name = "gcmbFamille";
+            this.gcmbFamille.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.gcmbFamille.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.gcmbFamille.Size = new System.Drawing.Size(273, 26);
+            this.gcmbFamille.TabIndex = 40;
+            // 
+            // gunaButton1
+            // 
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
+            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton1.Location = new System.Drawing.Point(213, 450);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Radius = 15;
+            this.gunaButton1.Size = new System.Drawing.Size(145, 29);
+            this.gunaButton1.TabIndex = 41;
+            this.gunaButton1.Text = "Valider";
             // 
             // FrmMajMedicament
             // 
-            this.ClientSize = new System.Drawing.Size(798, 633);
+            this.ClientSize = new System.Drawing.Size(542, 633);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Name = "FrmMajMedicament";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -216,18 +263,17 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox cmbFamille;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        private Guna.UI.WinForms.GunaButton gbtnValider;
+        private Guna.UI.WinForms.GunaTextBox gtxtEffets;
+        private Guna.UI.WinForms.GunaTextBox gtxtComposition;
+        private Guna.UI.WinForms.GunaTextBox gtxtContreIndications;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private Guna.UI.WinForms.GunaComboBox gcmbFamille;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
     }
 }

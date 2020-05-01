@@ -34,26 +34,35 @@ namespace ClientRestGsbRapports
             this.laSecretaire.ticket = d.ticket;//Deserialisation du ticket  
             string familles = d.familles.ToString();//Deserialisation de la liste
             List<Famille> l = JsonConvert.DeserializeObject<List<Famille>>(familles);//liste de familles
-            cmbNomFamille.DataSource = l;// Chargement de la liste  
-            cmbNomFamille.ValueMember = "id";
-            cmbNomFamille.DisplayMember = "libelle";
+            gunaComboBox1.DataSource = l;// Chargement de la liste  
+            gunaComboBox1.ValueMember = "id";
+            gunaComboBox1.DisplayMember = "libelle";
+        }
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
 
         }
 
-        private void btnValider_Click(object sender, EventArgs e)
+        private void gcmbNomFamille_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void gbtnValider_Click(object sender, EventArgs e)
+        {
+
             try  // code pour l'ajout d'un medicament 
             {
                 this.url = this.site + "medicaments"; // url 
                 NameValueCollection parametres = new NameValueCollection(); // 
                 string mdpHas = this.laSecretaire.getHashTicketMdp();// récupération du ticket
-                string idFamille = cmbNomFamille.SelectedValue.ToString();// récupération de idFamille
+                string idFamille = gunaComboBox1.SelectedValue.ToString();// récupération de idFamille
                 parametres.Add("ticket", mdpHas);//
                 parametres.Add("idMedicament", this.textIdMedicament.Text.ToUpper());
-                parametres.Add("nomCommercial", this.txtNomCommercial.Text);
-                parametres.Add("effets", this.txtEffets.Text);
-                parametres.Add("contreIndications", this.txtContreIndications.Text);
-                parametres.Add("composition", this.txtComposition.Text);
+                parametres.Add("nomCommercial", this.gtxtNomCommercial.Text);
+                parametres.Add("effets", this.gtxtEffets.Text);
+                parametres.Add("contreIndications", this.gtxtContreIndications.Text);
+                parametres.Add("composition", this.gtxtComposition.Text);
                 parametres.Add("idFamille", idFamille);
                 byte[] tabByte = wb.UploadValues(url, "POST", parametres);
                 string reponse = UnicodeEncoding.UTF8.GetString(tabByte);
@@ -68,14 +77,12 @@ namespace ClientRestGsbRapports
                     MessageBox.Show(((HttpWebResponse)ex.Response).StatusCode.ToString());
             }
 
-        //    Ajout d’un médicament
-        //URL: gsbRapports / medicaments
-        //Paramètres: ticket =< ticket > idMedicament =< id > effets =< effets > contreIndications =< cid > composition =< compo idFamille =< id >
-        //     exemple : http://localhost/restGSB/medicaments
-        //    ticket = 4nblbv5zttybtvd3ygx idMedicament = RET12 effets = aucuns contreIndications = aucunes composition = beaucoup de composants
-        //    idFamille = AAA
+            //    Ajout d’un médicament
+            //URL: gsbRapports / medicaments
+            //Paramètres: ticket =< ticket > idMedicament =< id > effets =< effets > contreIndications =< cid > composition =< compo idFamille =< id >
+            //     exemple : http://localhost/restGSB/medicaments
+            //    ticket = 4nblbv5zttybtvd3ygx idMedicament = RET12 effets = aucuns contreIndications = aucunes composition = beaucoup de composants
+            //    idFamille = A
         }
-
-      
     }
 }
