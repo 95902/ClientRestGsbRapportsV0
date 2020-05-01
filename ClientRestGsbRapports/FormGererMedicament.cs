@@ -78,7 +78,15 @@ namespace ClientRestGsbRapports
 
         private void gunaAdvenceButton2_Click(object sender, EventArgs e)
         {
+            
+            FrmNewMedicement f = new FrmNewMedicement(this.laSecretaire);
+            f.Show();
+        }
 
+        private void gunaAdvenceButton3_Click(object sender, EventArgs e)
+        {
+            FrmMajMedicament g = new FrmMajMedicament();
+            g.Show();
         }
     }
 
