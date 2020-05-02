@@ -87,6 +87,7 @@
             this.gbtnValider.Size = new System.Drawing.Size(145, 29);
             this.gbtnValider.TabIndex = 41;
             this.gbtnValider.Text = "Valider";
+            this.gbtnValider.Click += new System.EventHandler(this.gbtnValider_Click);
             // 
             // gtxtContreIndications
             // 

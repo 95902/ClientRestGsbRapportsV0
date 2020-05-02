@@ -42,8 +42,8 @@ namespace ClientRestGsbRapports
             //gunaComboBox1.ValueMember= "id";
             //gunaComboBox1.DisplayMember= "libelle"; 
 
-            /* dataGridView1.DataSource = l*/
-            //chargement de dataGridview
+            gunaLabel5.Text ="Secrétaire";
+            gunaLabel3.Text = s.nom + " " + s.prenom;
 
             userControlAjouter1.Hide();
             userControlMedicaments1.Hide();
