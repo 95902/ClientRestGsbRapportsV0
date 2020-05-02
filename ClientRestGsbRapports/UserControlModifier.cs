@@ -21,7 +21,7 @@ namespace ClientRestGsbRapports
         private Secretaire laSecretaire;
         private string url;
         private Medicament leMedicament;
-        public UserControlModifier(Secretaire s)
+        public UserControlModifier(Secretaire s,Medicament e)
         {
             InitializeComponent();
             this.laSecretaire = s;

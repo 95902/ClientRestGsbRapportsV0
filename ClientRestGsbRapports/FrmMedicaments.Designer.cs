@@ -28,387 +28,253 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMedicaments));
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtIdMedicament = new System.Windows.Forms.TextBox();
+            this.gtxtNomComercial = new Guna.UI.WinForms.GunaTextBox();
+            this.gtxtIdMedicament = new Guna.UI.WinForms.GunaTextBox();
+            this.gbtnMiseAJours = new Guna.UI.WinForms.GunaButton();
+            this.gtxtEffets = new Guna.UI.WinForms.GunaTextBox();
+            this.gtxtComposition = new Guna.UI.WinForms.GunaTextBox();
+            this.gtxtContreIndications = new Guna.UI.WinForms.GunaTextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnMiseAJour = new System.Windows.Forms.Button();
-            this.txtNonComercial = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtEffets = new System.Windows.Forms.TextBox();
-            this.txtContreIndication = new System.Windows.Forms.TextBox();
-            this.txtComposition = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // bindingNavigator1
-            // 
-            this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
-            this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem});
-            this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
-            this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(731, 31);
-            this.bindingNavigator1.TabIndex = 5;
-            this.bindingNavigator1.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorAddNewItem.Text = "Ajouter nouveau";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 28);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Nombre total d\'éléments";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorDeleteItem.Text = "Supprimer";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorMoveFirstItem.Text = "Placer en premier";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorMovePreviousItem.Text = "Déplacer vers le haut";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Position actuelle";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorMoveNextItem.Text = "Déplacer vers le bas";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
-            this.bindingNavigatorMoveLastItem.Text = "Placer en dernier";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 31);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(281, 691);
-            this.panel1.TabIndex = 13;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(33, 261);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(227, 161);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Info;
-            this.panel2.Controls.Add(this.txtIdMedicament);
+            this.panel2.Controls.Add(this.gtxtNomComercial);
+            this.panel2.Controls.Add(this.gtxtIdMedicament);
+            this.panel2.Controls.Add(this.gbtnMiseAJours);
+            this.panel2.Controls.Add(this.gtxtEffets);
+            this.panel2.Controls.Add(this.gtxtComposition);
+            this.panel2.Controls.Add(this.gtxtContreIndications);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.btnMiseAJour);
-            this.panel2.Controls.Add(this.txtNonComercial);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.txtEffets);
-            this.panel2.Controls.Add(this.txtContreIndication);
-            this.panel2.Controls.Add(this.txtComposition);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(272, 31);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(459, 691);
+            this.panel2.Size = new System.Drawing.Size(548, 587);
             this.panel2.TabIndex = 15;
             // 
-            // txtIdMedicament
+            // gtxtNomComercial
             // 
-            this.txtIdMedicament.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtIdMedicament.Location = new System.Drawing.Point(23, 208);
-            this.txtIdMedicament.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIdMedicament.Name = "txtIdMedicament";
-            this.txtIdMedicament.Size = new System.Drawing.Size(359, 22);
-            this.txtIdMedicament.TabIndex = 12;
+            this.gtxtNomComercial.BaseColor = System.Drawing.Color.White;
+            this.gtxtNomComercial.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtNomComercial.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtNomComercial.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtNomComercial.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gtxtNomComercial.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtNomComercial.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtNomComercial.Location = new System.Drawing.Point(250, 181);
+            this.gtxtNomComercial.Name = "gtxtNomComercial";
+            this.gtxtNomComercial.PasswordChar = '\0';
+            this.gtxtNomComercial.SelectedText = "";
+            this.gtxtNomComercial.Size = new System.Drawing.Size(253, 26);
+            this.gtxtNomComercial.TabIndex = 63;
+            // 
+            // gtxtIdMedicament
+            // 
+            this.gtxtIdMedicament.BaseColor = System.Drawing.Color.White;
+            this.gtxtIdMedicament.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtIdMedicament.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtIdMedicament.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtIdMedicament.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gtxtIdMedicament.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtIdMedicament.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtIdMedicament.Location = new System.Drawing.Point(250, 119);
+            this.gtxtIdMedicament.Name = "gtxtIdMedicament";
+            this.gtxtIdMedicament.PasswordChar = '\0';
+            this.gtxtIdMedicament.SelectedText = "";
+            this.gtxtIdMedicament.Size = new System.Drawing.Size(253, 26);
+            this.gtxtIdMedicament.TabIndex = 62;
+            // 
+            // gbtnMiseAJours
+            // 
+            this.gbtnMiseAJours.AnimationHoverSpeed = 0.07F;
+            this.gbtnMiseAJours.AnimationSpeed = 0.03F;
+            this.gbtnMiseAJours.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnMiseAJours.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.gbtnMiseAJours.BorderColor = System.Drawing.Color.Black;
+            this.gbtnMiseAJours.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnMiseAJours.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnMiseAJours.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbtnMiseAJours.ForeColor = System.Drawing.Color.White;
+            this.gbtnMiseAJours.Image = null;
+            this.gbtnMiseAJours.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnMiseAJours.Location = new System.Drawing.Point(371, 488);
+            this.gbtnMiseAJours.Name = "gbtnMiseAJours";
+            this.gbtnMiseAJours.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gbtnMiseAJours.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnMiseAJours.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnMiseAJours.OnHoverImage = null;
+            this.gbtnMiseAJours.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnMiseAJours.Radius = 15;
+            this.gbtnMiseAJours.Size = new System.Drawing.Size(132, 29);
+            this.gbtnMiseAJours.TabIndex = 61;
+            this.gbtnMiseAJours.Text = "Mettre a jour";
+            this.gbtnMiseAJours.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gbtnMiseAJours.Click += new System.EventHandler(this.gbtnMiseAJours_Click);
+            // 
+            // gtxtEffets
+            // 
+            this.gtxtEffets.BaseColor = System.Drawing.Color.White;
+            this.gtxtEffets.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtEffets.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtEffets.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtEffets.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gtxtEffets.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtEffets.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtEffets.Location = new System.Drawing.Point(250, 329);
+            this.gtxtEffets.Multiline = true;
+            this.gtxtEffets.Name = "gtxtEffets";
+            this.gtxtEffets.PasswordChar = '\0';
+            this.gtxtEffets.SelectedText = "";
+            this.gtxtEffets.Size = new System.Drawing.Size(253, 46);
+            this.gtxtEffets.TabIndex = 59;
+            // 
+            // gtxtComposition
+            // 
+            this.gtxtComposition.BaseColor = System.Drawing.Color.White;
+            this.gtxtComposition.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtComposition.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtComposition.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtComposition.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gtxtComposition.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtComposition.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtComposition.Location = new System.Drawing.Point(250, 249);
+            this.gtxtComposition.Multiline = true;
+            this.gtxtComposition.Name = "gtxtComposition";
+            this.gtxtComposition.PasswordChar = '\0';
+            this.gtxtComposition.SelectedText = "";
+            this.gtxtComposition.Size = new System.Drawing.Size(253, 51);
+            this.gtxtComposition.TabIndex = 58;
+            // 
+            // gtxtContreIndications
+            // 
+            this.gtxtContreIndications.BaseColor = System.Drawing.Color.White;
+            this.gtxtContreIndications.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtContreIndications.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtContreIndications.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtContreIndications.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gtxtContreIndications.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtContreIndications.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtContreIndications.Location = new System.Drawing.Point(250, 397);
+            this.gtxtContreIndications.Multiline = true;
+            this.gtxtContreIndications.Name = "gtxtContreIndications";
+            this.gtxtContreIndications.PasswordChar = '\0';
+            this.gtxtContreIndications.SelectedText = "";
+            this.gtxtContreIndications.Size = new System.Drawing.Size(253, 55);
+            this.gtxtContreIndications.TabIndex = 57;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label11.Location = new System.Drawing.Point(29, 397);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(153, 17);
+            this.label11.TabIndex = 56;
+            this.label11.Text = "Contre Indications";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label12.Location = new System.Drawing.Point(44, 329);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(53, 17);
+            this.label12.TabIndex = 55;
+            this.label12.Text = "Effets";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label13.Location = new System.Drawing.Point(44, 249);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(105, 17);
+            this.label13.TabIndex = 54;
+            this.label13.Text = "Composition";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label14.Location = new System.Drawing.Point(44, 181);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(138, 17);
+            this.label14.TabIndex = 53;
+            this.label14.Text = "Nom Commercial";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label15.Location = new System.Drawing.Point(139, 26);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(218, 18);
+            this.label15.TabIndex = 52;
+            this.label15.Text = "Modifier un medicament";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.Info;
             this.label6.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(19, 169);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label6.Location = new System.Drawing.Point(44, 119);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 20);
+            this.label6.Size = new System.Drawing.Size(123, 17);
             this.label6.TabIndex = 11;
             this.label6.Text = "Id Medicament";
             // 
-            // btnMiseAJour
-            // 
-            this.btnMiseAJour.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnMiseAJour.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMiseAJour.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMiseAJour.Location = new System.Drawing.Point(23, 546);
-            this.btnMiseAJour.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMiseAJour.Name = "btnMiseAJour";
-            this.btnMiseAJour.Size = new System.Drawing.Size(359, 34);
-            this.btnMiseAJour.TabIndex = 10;
-            this.btnMiseAJour.Text = "Mettre a jour";
-            this.btnMiseAJour.UseVisualStyleBackColor = false;
-            this.btnMiseAJour.Click += new System.EventHandler(this.btnModifier_Click);
-            // 
-            // txtNonComercial
-            // 
-            this.txtNonComercial.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtNonComercial.Location = new System.Drawing.Point(23, 291);
-            this.txtNonComercial.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNonComercial.Name = "txtNonComercial";
-            this.txtNonComercial.Size = new System.Drawing.Size(359, 22);
-            this.txtNonComercial.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(18, 55);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Modifier Medicament ";
-            // 
-            // txtEffets
-            // 
-            this.txtEffets.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtEffets.Location = new System.Drawing.Point(23, 420);
-            this.txtEffets.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEffets.Name = "txtEffets";
-            this.txtEffets.Size = new System.Drawing.Size(359, 22);
-            this.txtEffets.TabIndex = 8;
-            // 
-            // txtContreIndication
-            // 
-            this.txtContreIndication.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtContreIndication.Location = new System.Drawing.Point(23, 500);
-            this.txtContreIndication.Margin = new System.Windows.Forms.Padding(4);
-            this.txtContreIndication.Name = "txtContreIndication";
-            this.txtContreIndication.Size = new System.Drawing.Size(359, 22);
-            this.txtContreIndication.TabIndex = 9;
-            // 
-            // txtComposition
-            // 
-            this.txtComposition.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtComposition.Location = new System.Drawing.Point(23, 351);
-            this.txtComposition.Margin = new System.Windows.Forms.Padding(4);
-            this.txtComposition.Name = "txtComposition";
-            this.txtComposition.Size = new System.Drawing.Size(359, 22);
-            this.txtComposition.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Info;
-            this.label2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(19, 250);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(169, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nom commercial";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.Info;
-            this.label4.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label4.Location = new System.Drawing.Point(19, 317);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Composition";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Info;
-            this.label3.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(19, 386);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Effets";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Info;
-            this.label5.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label5.Location = new System.Drawing.Point(19, 458);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(183, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Contre indications";
-            // 
             // FrmMedicaments
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 722);
+            this.ClientSize = new System.Drawing.Size(548, 587);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.bindingNavigator1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMedicaments";
             this.Text = "FormMedicaments";
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
-            this.bindingNavigator1.ResumeLayout(false);
-            this.bindingNavigator1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.BindingNavigator bindingNavigator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtNonComercial;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtEffets;
-        private System.Windows.Forms.TextBox txtContreIndication;
-        private System.Windows.Forms.TextBox txtComposition;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnMiseAJour;
-        private System.Windows.Forms.TextBox txtIdMedicament;
         private System.Windows.Forms.Label label6;
+        private Guna.UI.WinForms.GunaTextBox gtxtNomComercial;
+        private Guna.UI.WinForms.GunaTextBox gtxtIdMedicament;
+        private Guna.UI.WinForms.GunaButton gbtnMiseAJours;
+        private Guna.UI.WinForms.GunaTextBox gtxtEffets;
+        private Guna.UI.WinForms.GunaTextBox gtxtComposition;
+        private Guna.UI.WinForms.GunaTextBox gtxtContreIndications;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }
