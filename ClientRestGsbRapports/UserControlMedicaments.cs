@@ -56,7 +56,8 @@ namespace ClientRestGsbRapports
         }
         private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            FrmMedicaments f = new FrmMedicaments(this.leMedicament, this.laSecretaire);
+            Medicament m = (Medicament)gunaDataGridView1.SelectedRows[0].DataBoundItem;
+            FrmMedicaments f = new FrmMedicaments(m, this.laSecretaire);
             f.Show();
         }
     }
