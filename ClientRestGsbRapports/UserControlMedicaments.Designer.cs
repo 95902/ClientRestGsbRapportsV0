@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -37,13 +38,21 @@
             this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.gbtnValider = new Guna.UI.WinForms.GunaButton();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomCommercialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.compositionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contreIndicationsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.effetsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.medicamentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicamentBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaDataGridView1
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gunaDataGridView1.AutoGenerateColumns = false;
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -58,6 +67,13 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gunaDataGridView1.ColumnHeadersHeight = 21;
+            this.gunaDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nomCommercialDataGridViewTextBoxColumn,
+            this.compositionDataGridViewTextBoxColumn,
+            this.contreIndicationsDataGridViewTextBoxColumn,
+            this.effetsDataGridViewTextBoxColumn});
+            this.gunaDataGridView1.DataSource = this.medicamentBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -96,7 +112,7 @@
             this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 22;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gunaDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDataGridView1_CellContentClick);
+            this.gunaDataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDataGridView1_CellContentClick);
             // 
             // gunaLabel6
             // 
@@ -166,6 +182,45 @@
             this.gbtnValider.TabIndex = 42;
             this.gbtnValider.Text = "Ajouter";
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.FillWeight = 20.21178F;
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // nomCommercialDataGridViewTextBoxColumn
+            // 
+            this.nomCommercialDataGridViewTextBoxColumn.DataPropertyName = "nomCommercial";
+            this.nomCommercialDataGridViewTextBoxColumn.FillWeight = 95.50066F;
+            this.nomCommercialDataGridViewTextBoxColumn.HeaderText = "nomCommercial";
+            this.nomCommercialDataGridViewTextBoxColumn.Name = "nomCommercialDataGridViewTextBoxColumn";
+            // 
+            // compositionDataGridViewTextBoxColumn
+            // 
+            this.compositionDataGridViewTextBoxColumn.DataPropertyName = "composition";
+            this.compositionDataGridViewTextBoxColumn.FillWeight = 95.50066F;
+            this.compositionDataGridViewTextBoxColumn.HeaderText = "composition";
+            this.compositionDataGridViewTextBoxColumn.Name = "compositionDataGridViewTextBoxColumn";
+            // 
+            // contreIndicationsDataGridViewTextBoxColumn
+            // 
+            this.contreIndicationsDataGridViewTextBoxColumn.DataPropertyName = "contreIndications";
+            this.contreIndicationsDataGridViewTextBoxColumn.FillWeight = 95.50066F;
+            this.contreIndicationsDataGridViewTextBoxColumn.HeaderText = "contreIndications";
+            this.contreIndicationsDataGridViewTextBoxColumn.Name = "contreIndicationsDataGridViewTextBoxColumn";
+            // 
+            // effetsDataGridViewTextBoxColumn
+            // 
+            this.effetsDataGridViewTextBoxColumn.DataPropertyName = "effets";
+            this.effetsDataGridViewTextBoxColumn.FillWeight = 95.50066F;
+            this.effetsDataGridViewTextBoxColumn.HeaderText = "effets";
+            this.effetsDataGridViewTextBoxColumn.Name = "effetsDataGridViewTextBoxColumn";
+            // 
+            // medicamentBindingSource
+            // 
+            this.medicamentBindingSource.DataSource = typeof(mdlGsbRapports.Medicament);
+            // 
             // UserControlMedicaments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,6 +233,7 @@
             this.Name = "UserControlMedicaments";
             this.Size = new System.Drawing.Size(545, 328);
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicamentBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,5 +246,11 @@
         private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
         private System.Windows.Forms.Button button1;
         private Guna.UI.WinForms.GunaButton gbtnValider;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomCommercialDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn compositionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contreIndicationsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn effetsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource medicamentBindingSource;
     }
 }

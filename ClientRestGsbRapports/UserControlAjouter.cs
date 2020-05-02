@@ -73,5 +73,7 @@ namespace ClientRestGsbRapports
             //    ticket = 4nblbv5zttybtvd3ygx idMedicament = RET12 effets = aucuns contreIndications = aucunes composition = beaucoup de composants
             //    idFamille = A
         }
+
+    
     }
 }

@@ -46,7 +46,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.gtxtNomComercial);
             this.panel2.Controls.Add(this.gtxtIdMedicament);
             this.panel2.Controls.Add(this.gbtnMiseAJours);
@@ -71,6 +71,7 @@
             this.gtxtNomComercial.BaseColor = System.Drawing.Color.White;
             this.gtxtNomComercial.BorderColor = System.Drawing.Color.Silver;
             this.gtxtNomComercial.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtNomComercial.Enabled = false;
             this.gtxtNomComercial.FocusedBaseColor = System.Drawing.Color.White;
             this.gtxtNomComercial.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gtxtNomComercial.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -87,6 +88,7 @@
             this.gtxtIdMedicament.BaseColor = System.Drawing.Color.White;
             this.gtxtIdMedicament.BorderColor = System.Drawing.Color.Silver;
             this.gtxtIdMedicament.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtIdMedicament.Enabled = false;
             this.gtxtIdMedicament.FocusedBaseColor = System.Drawing.Color.White;
             this.gtxtIdMedicament.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gtxtIdMedicament.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -134,12 +136,12 @@
             this.gtxtEffets.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gtxtEffets.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtEffets.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gtxtEffets.Location = new System.Drawing.Point(250, 329);
+            this.gtxtEffets.Location = new System.Drawing.Point(250, 318);
             this.gtxtEffets.Multiline = true;
             this.gtxtEffets.Name = "gtxtEffets";
             this.gtxtEffets.PasswordChar = '\0';
             this.gtxtEffets.SelectedText = "";
-            this.gtxtEffets.Size = new System.Drawing.Size(253, 46);
+            this.gtxtEffets.Size = new System.Drawing.Size(253, 62);
             this.gtxtEffets.TabIndex = 59;
             // 
             // gtxtComposition
@@ -151,12 +153,12 @@
             this.gtxtComposition.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gtxtComposition.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtComposition.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gtxtComposition.Location = new System.Drawing.Point(250, 249);
+            this.gtxtComposition.Location = new System.Drawing.Point(250, 240);
             this.gtxtComposition.Multiline = true;
             this.gtxtComposition.Name = "gtxtComposition";
             this.gtxtComposition.PasswordChar = '\0';
             this.gtxtComposition.SelectedText = "";
-            this.gtxtComposition.Size = new System.Drawing.Size(253, 51);
+            this.gtxtComposition.Size = new System.Drawing.Size(253, 58);
             this.gtxtComposition.TabIndex = 58;
             // 
             // gtxtContreIndications
@@ -173,7 +175,7 @@
             this.gtxtContreIndications.Name = "gtxtContreIndications";
             this.gtxtContreIndications.PasswordChar = '\0';
             this.gtxtContreIndications.SelectedText = "";
-            this.gtxtContreIndications.Size = new System.Drawing.Size(253, 55);
+            this.gtxtContreIndications.Size = new System.Drawing.Size(253, 66);
             this.gtxtContreIndications.TabIndex = 57;
             // 
             // label11
@@ -181,7 +183,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
-            this.label11.Location = new System.Drawing.Point(29, 397);
+            this.label11.Location = new System.Drawing.Point(44, 397);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(153, 17);
@@ -193,7 +195,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
-            this.label12.Location = new System.Drawing.Point(44, 329);
+            this.label12.Location = new System.Drawing.Point(44, 318);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(53, 17);
@@ -205,7 +207,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
-            this.label13.Location = new System.Drawing.Point(44, 249);
+            this.label13.Location = new System.Drawing.Point(44, 240);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(105, 17);
@@ -239,7 +241,6 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.Info;
             this.label6.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.label6.Location = new System.Drawing.Point(44, 119);

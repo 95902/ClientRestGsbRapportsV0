@@ -43,6 +43,14 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.gunaImageRadioButton1 = new Guna.UI.WinForms.GunaImageRadioButton();
+            this.gunaImageRadioButton2 = new Guna.UI.WinForms.GunaImageRadioButton();
+            this.gunaImageRadioButton3 = new Guna.UI.WinForms.GunaImageRadioButton();
+            this.gunaImageRadioButton4 = new Guna.UI.WinForms.GunaImageRadioButton();
+            this.gunaImageRadioButton5 = new Guna.UI.WinForms.GunaImageRadioButton();
+            this.gunaImageRadioButton6 = new Guna.UI.WinForms.GunaImageRadioButton();
+            this.gunaImageRadioButton7 = new Guna.UI.WinForms.GunaImageRadioButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // gunaComboBox1
@@ -253,10 +261,107 @@
             this.label6.TabIndex = 29;
             this.label6.Text = "Ajouter un medicament";
             // 
+            // gunaImageRadioButton1
+            // 
+            this.gunaImageRadioButton1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaImageRadioButton1.ImageCheckedOff = ((System.Drawing.Image)(resources.GetObject("gunaImageRadioButton1.ImageCheckedOff")));
+            this.gunaImageRadioButton1.ImageCheckedOn = ((System.Drawing.Image)(resources.GetObject("gunaImageRadioButton1.ImageCheckedOn")));
+            this.gunaImageRadioButton1.ImageSize = new System.Drawing.Size(5, 5);
+            this.gunaImageRadioButton1.Location = new System.Drawing.Point(160, 57);
+            this.gunaImageRadioButton1.Name = "gunaImageRadioButton1";
+            this.gunaImageRadioButton1.Size = new System.Drawing.Size(10, 10);
+            this.gunaImageRadioButton1.TabIndex = 43;
+            // 
+            // gunaImageRadioButton2
+            // 
+            this.gunaImageRadioButton2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaImageRadioButton2.ImageCheckedOff = ((System.Drawing.Image)(resources.GetObject("gunaImageRadioButton2.ImageCheckedOff")));
+            this.gunaImageRadioButton2.ImageCheckedOn = ((System.Drawing.Image)(resources.GetObject("gunaImageRadioButton2.ImageCheckedOn")));
+            this.gunaImageRadioButton2.ImageSize = new System.Drawing.Size(5, 5);
+            this.gunaImageRadioButton2.Location = new System.Drawing.Point(179, 106);
+            this.gunaImageRadioButton2.Name = "gunaImageRadioButton2";
+            this.gunaImageRadioButton2.Size = new System.Drawing.Size(10, 10);
+            this.gunaImageRadioButton2.TabIndex = 44;
+            // 
+            // gunaImageRadioButton3
+            // 
+            this.gunaImageRadioButton3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaImageRadioButton3.ImageCheckedOff = ((System.Drawing.Image)(resources.GetObject("gunaImageRadioButton3.ImageCheckedOff")));
+            this.gunaImageRadioButton3.ImageCheckedOn = ((System.Drawing.Image)(resources.GetObject("gunaImageRadioButton3.ImageCheckedOn")));
+            this.gunaImageRadioButton3.ImageSize = new System.Drawing.Size(5, 5);
+            this.gunaImageRadioButton3.Location = new System.Drawing.Point(146, 152);
+            this.gunaImageRadioButton3.Name = "gunaImageRadioButton3";
+            this.gunaImageRadioButton3.Size = new System.Drawing.Size(10, 10);
+            this.gunaImageRadioButton3.TabIndex = 45;
+            // 
+            // gunaImageRadioButton4
+            // 
+            this.gunaImageRadioButton4.BackColor = System.Drawing.Color.Transparent;
+            this.gunaImageRadioButton4.ImageCheckedOff = ((System.Drawing.Image)(resources.GetObject("gunaImageRadioButton4.ImageCheckedOff")));
+            this.gunaImageRadioButton4.ImageCheckedOn = ((System.Drawing.Image)(resources.GetObject("gunaImageRadioButton4.ImageCheckedOn")));
+            this.gunaImageRadioButton4.ImageSize = new System.Drawing.Size(5, 5);
+            this.gunaImageRadioButton4.Location = new System.Drawing.Point(94, 227);
+            this.gunaImageRadioButton4.Name = "gunaImageRadioButton4";
+            this.gunaImageRadioButton4.Size = new System.Drawing.Size(10, 10);
+            this.gunaImageRadioButton4.TabIndex = 46;
+            // 
+            // gunaImageRadioButton5
+            // 
+            this.gunaImageRadioButton5.BackColor = System.Drawing.Color.Transparent;
+            this.gunaImageRadioButton5.ImageCheckedOff = ((System.Drawing.Image)(resources.GetObject("gunaImageRadioButton5.ImageCheckedOff")));
+            this.gunaImageRadioButton5.ImageCheckedOn = ((System.Drawing.Image)(resources.GetObject("gunaImageRadioButton5.ImageCheckedOn")));
+            this.gunaImageRadioButton5.ImageSize = new System.Drawing.Size(5, 5);
+            this.gunaImageRadioButton5.Location = new System.Drawing.Point(194, 301);
+            this.gunaImageRadioButton5.Name = "gunaImageRadioButton5";
+            this.gunaImageRadioButton5.Size = new System.Drawing.Size(10, 10);
+            this.gunaImageRadioButton5.TabIndex = 47;
+            // 
+            // gunaImageRadioButton6
+            // 
+            this.gunaImageRadioButton6.BackColor = System.Drawing.Color.Transparent;
+            this.gunaImageRadioButton6.ImageCheckedOff = ((System.Drawing.Image)(resources.GetObject("gunaImageRadioButton6.ImageCheckedOff")));
+            this.gunaImageRadioButton6.ImageCheckedOn = ((System.Drawing.Image)(resources.GetObject("gunaImageRadioButton6.ImageCheckedOn")));
+            this.gunaImageRadioButton6.ImageSize = new System.Drawing.Size(5, 5);
+            this.gunaImageRadioButton6.Location = new System.Drawing.Point(142, 375);
+            this.gunaImageRadioButton6.Name = "gunaImageRadioButton6";
+            this.gunaImageRadioButton6.Size = new System.Drawing.Size(10, 10);
+            this.gunaImageRadioButton6.TabIndex = 48;
+            // 
+            // gunaImageRadioButton7
+            // 
+            this.gunaImageRadioButton7.BackColor = System.Drawing.Color.Transparent;
+            this.gunaImageRadioButton7.ImageCheckedOff = ((System.Drawing.Image)(resources.GetObject("gunaImageRadioButton7.ImageCheckedOff")));
+            this.gunaImageRadioButton7.ImageCheckedOn = ((System.Drawing.Image)(resources.GetObject("gunaImageRadioButton7.ImageCheckedOn")));
+            this.gunaImageRadioButton7.ImageSize = new System.Drawing.Size(7, 7);
+            this.gunaImageRadioButton7.Location = new System.Drawing.Point(39, 429);
+            this.gunaImageRadioButton7.Name = "gunaImageRadioButton7";
+            this.gunaImageRadioButton7.Size = new System.Drawing.Size(10, 10);
+            this.gunaImageRadioButton7.TabIndex = 49;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.label3.Location = new System.Drawing.Point(55, 429);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 10);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "Champs obligatoire";
+            // 
             // UserControlAjouter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.gunaImageRadioButton7);
+            this.Controls.Add(this.gunaImageRadioButton6);
+            this.Controls.Add(this.gunaImageRadioButton5);
+            this.Controls.Add(this.gunaImageRadioButton4);
+            this.Controls.Add(this.gunaImageRadioButton3);
+            this.Controls.Add(this.gunaImageRadioButton2);
+            this.Controls.Add(this.gunaImageRadioButton1);
             this.Controls.Add(this.gunaComboBox1);
             this.Controls.Add(this.gbtnValider);
             this.Controls.Add(this.gtxtContreIndications);
@@ -294,5 +399,13 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private Guna.UI.WinForms.GunaImageRadioButton gunaImageRadioButton1;
+        private Guna.UI.WinForms.GunaImageRadioButton gunaImageRadioButton2;
+        private Guna.UI.WinForms.GunaImageRadioButton gunaImageRadioButton3;
+        private Guna.UI.WinForms.GunaImageRadioButton gunaImageRadioButton4;
+        private Guna.UI.WinForms.GunaImageRadioButton gunaImageRadioButton5;
+        private Guna.UI.WinForms.GunaImageRadioButton gunaImageRadioButton6;
+        private Guna.UI.WinForms.GunaImageRadioButton gunaImageRadioButton7;
+        private System.Windows.Forms.Label label3;
     }
 }
