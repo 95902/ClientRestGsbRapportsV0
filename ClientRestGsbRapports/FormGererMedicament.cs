@@ -21,9 +21,10 @@ namespace ClientRestGsbRapports
         private string url;
         private Medicament leMedicament;
         public FormGererMedicament(Secretaire s)  
-        {
-            InitializeComponent();
+        {   
             this.laSecretaire = s;
+            InitializeComponent();
+            
             string mdpHas = s.getHashTicketMdp();
             
             //Guna.UI.Lib.GraphicsHelper.DrawLineShadow(gunaPanel1, Color.Black, 20, 5, Guna.UI.WinForms.VerHorAlign.HoriziontalTop);
@@ -47,6 +48,7 @@ namespace ClientRestGsbRapports
             userControlAjouter1.Hide();
             userControlMedicaments1.Hide();
             userControlModifier1.Hide();
+            userControlRecherchecs1.Hide();
 
         }
 
@@ -80,6 +82,7 @@ namespace ClientRestGsbRapports
         }
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
         {
+            userControlRecherchecs1.Hide();
             userControlAjouter1.Hide();
             userControlModifier1.Hide();
             /////////////////////////////
@@ -89,6 +92,7 @@ namespace ClientRestGsbRapports
         }
         private void gunaAdvenceButton2_Click(object sender, EventArgs e)
         {
+            userControlRecherchecs1.Hide();
             userControlMedicaments1.Hide();
             userControlModifier1.Hide();
             /////////////////////////////
@@ -97,11 +101,22 @@ namespace ClientRestGsbRapports
         }  
         private void gunaAdvenceButton3_Click(object sender, EventArgs e)
         {
+            userControlRecherchecs1.Hide();
             userControlMedicaments1.Hide();
             userControlAjouter1.Hide();
             /////////////////////////////
             userControlModifier1.Show();
             userControlModifier1.BringToFront();
+        }
+
+        private void gunaAdvenceButton5_Click(object sender, EventArgs e)
+        {
+            userControlMedicaments1.Hide();
+            userControlAjouter1.Hide();
+            userControlModifier1.Hide();
+            /////////////////////////////
+            userControlRecherchecs1.Show();
+            userControlRecherchecs1.BringToFront();
         }
     }
     

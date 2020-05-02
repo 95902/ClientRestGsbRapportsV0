@@ -31,7 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGererMedicament));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.userControlMedicaments1 = new ClientRestGsbRapports.UserControlMedicaments();
+            this.userControlRecherchecs1 = new ClientRestGsbRapports.UserControlRecherchecs();
+            this.userControlModifier1 = new ClientRestGsbRapports.UserControlModifier();
+            this.userControlMedicaments1 = new ClientRestGsbRapports.UserControlMedicaments(laSecretaire);
             this.userControlAjouter1 = new ClientRestGsbRapports.UserControlAjouter();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -39,6 +41,7 @@
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.gunaAdvenceButton5 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton3 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton2 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
@@ -49,7 +52,6 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ResizeForm1 = new Guna.UI2.WinForms.Guna2ResizeForm(this.components);
             this.medicamentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.userControlModifier1 = new ClientRestGsbRapports.UserControlModifier();
             this.panel2.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,6 +63,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.userControlRecherchecs1);
             this.panel2.Controls.Add(this.userControlModifier1);
             this.panel2.Controls.Add(this.userControlMedicaments1);
             this.panel2.Controls.Add(this.userControlAjouter1);
@@ -71,6 +74,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(639, 528);
             this.panel2.TabIndex = 14;
+            // 
+            // userControlRecherchecs1
+            // 
+            this.userControlRecherchecs1.Location = new System.Drawing.Point(17, 66);
+            this.userControlRecherchecs1.Name = "userControlRecherchecs1";
+            this.userControlRecherchecs1.Size = new System.Drawing.Size(531, 450);
+            this.userControlRecherchecs1.TabIndex = 10;
+            // 
+            // userControlModifier1
+            // 
+            this.userControlModifier1.Location = new System.Drawing.Point(26, 70);
+            this.userControlModifier1.Name = "userControlModifier1";
+            this.userControlModifier1.Size = new System.Drawing.Size(492, 370);
+            this.userControlModifier1.TabIndex = 9;
             // 
             // userControlMedicaments1
             // 
@@ -167,6 +184,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(96)))));
+            this.panel1.Controls.Add(this.gunaAdvenceButton5);
             this.panel1.Controls.Add(this.gunaAdvenceButton3);
             this.panel1.Controls.Add(this.gunaAdvenceButton2);
             this.panel1.Controls.Add(this.gunaLabel5);
@@ -181,6 +199,41 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(221, 528);
             this.panel1.TabIndex = 13;
+            // 
+            // gunaAdvenceButton5
+            // 
+            this.gunaAdvenceButton5.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton5.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(96)))));
+            this.gunaAdvenceButton5.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton5.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.gunaAdvenceButton5.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gunaAdvenceButton5.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton5.CheckedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(209)))), ((int)(((byte)(218)))));
+            this.gunaAdvenceButton5.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton5.CheckedImage")));
+            this.gunaAdvenceButton5.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.gunaAdvenceButton5.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton5.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton5.Font = new System.Drawing.Font("Segoe UI Historic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaAdvenceButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(209)))), ((int)(((byte)(218)))));
+            this.gunaAdvenceButton5.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton5.Image")));
+            this.gunaAdvenceButton5.ImageOffsetX = 15;
+            this.gunaAdvenceButton5.ImageSize = new System.Drawing.Size(16, 16);
+            this.gunaAdvenceButton5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.gunaAdvenceButton5.LineLeft = 5;
+            this.gunaAdvenceButton5.Location = new System.Drawing.Point(0, 248);
+            this.gunaAdvenceButton5.Name = "gunaAdvenceButton5";
+            this.gunaAdvenceButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gunaAdvenceButton5.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton5.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(209)))), ((int)(((byte)(218)))));
+            this.gunaAdvenceButton5.OnHoverImage = null;
+            this.gunaAdvenceButton5.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gunaAdvenceButton5.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton5.OnPressedDepth = 0;
+            this.gunaAdvenceButton5.Size = new System.Drawing.Size(221, 60);
+            this.gunaAdvenceButton5.TabIndex = 11;
+            this.gunaAdvenceButton5.Text = "RECHERCHE";
+            this.gunaAdvenceButton5.Click += new System.EventHandler(this.gunaAdvenceButton5_Click);
             // 
             // gunaAdvenceButton3
             // 
@@ -203,7 +256,7 @@
             this.gunaAdvenceButton3.ImageSize = new System.Drawing.Size(16, 16);
             this.gunaAdvenceButton3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
             this.gunaAdvenceButton3.LineLeft = 5;
-            this.gunaAdvenceButton3.Location = new System.Drawing.Point(0, 308);
+            this.gunaAdvenceButton3.Location = new System.Drawing.Point(0, 359);
             this.gunaAdvenceButton3.Name = "gunaAdvenceButton3";
             this.gunaAdvenceButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gunaAdvenceButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -238,7 +291,7 @@
             this.gunaAdvenceButton2.ImageSize = new System.Drawing.Size(16, 16);
             this.gunaAdvenceButton2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
             this.gunaAdvenceButton2.LineLeft = 5;
-            this.gunaAdvenceButton2.Location = new System.Drawing.Point(0, 253);
+            this.gunaAdvenceButton2.Location = new System.Drawing.Point(0, 304);
             this.gunaAdvenceButton2.Name = "gunaAdvenceButton2";
             this.gunaAdvenceButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gunaAdvenceButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -318,7 +371,7 @@
             this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(14, 14);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
             this.gunaAdvenceButton1.LineLeft = 5;
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(0, 196);
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(0, 194);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
             this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -347,13 +400,6 @@
             // medicamentBindingSource1
             // 
             this.medicamentBindingSource1.DataSource = typeof(mdlGsbRapports.Medicament);
-            // 
-            // userControlModifier1
-            // 
-            this.userControlModifier1.Location = new System.Drawing.Point(26, 70);
-            this.userControlModifier1.Name = "userControlModifier1";
-            this.userControlModifier1.Size = new System.Drawing.Size(492, 370);
-            this.userControlModifier1.TabIndex = 9;
             // 
             // FormGererMedicament
             // 
@@ -401,5 +447,7 @@
         private UserControlAjouter userControlAjouter1;
         private UserControlMedicaments userControlMedicaments1;
         private UserControlModifier userControlModifier1;
+        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton5;
+        private UserControlRecherchecs userControlRecherchecs1;
     }
 }

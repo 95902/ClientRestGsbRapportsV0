@@ -22,10 +22,10 @@ namespace ClientRestGsbRapports
         private string url;
         private Medicament leMedicament;
         public FrmMedicaments(Medicament e, Secretaire s)
-        {
+        {       leMedicament = e;
             InitializeComponent();
 
-            leMedicament = e;
+            
             wb = new WebClient();
             site = "http://localhost/restGSB/";
             laSecretaire = s;

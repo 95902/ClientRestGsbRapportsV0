@@ -126,6 +126,12 @@
     <Compile Include="UserControlModifier.Designer.cs">
       <DependentUpon>UserControlModifier.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlRecherchecs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlRecherchecs.Designer.cs">
+      <DependentUpon>UserControlRecherchecs.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormGererMedicament.resx">
       <DependentUpon>FormGererMedicament.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlModifier.resx">
       <DependentUpon>UserControlModifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlRecherchecs.resx">
+      <DependentUpon>UserControlRecherchecs.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
