@@ -118,6 +118,14 @@ namespace ClientRestGsbRapports
             userControlRecherchecs1.Show();
             userControlRecherchecs1.BringToFront();
         }
+        private void gunaAdvenceButton4_Click(object sender, EventArgs e)
+        {
+          
+            FormGererMedicament f = new FormGererMedicament(laSecretaire);
+            f.Close();
+            FormGererMedicament fi = new FormGererMedicament(laSecretaire);
+            fi.Hide();
+        }
     }
     
 

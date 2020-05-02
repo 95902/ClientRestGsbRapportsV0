@@ -112,7 +112,9 @@ namespace ClientRestGsbRapports
                     this.laSecretaire.mdp = this.gtxtMdp.Text;
                     this.laSecretaire.ticket = s.ticket;
                     this.lblNom.Text = "Bonjour " + this.laSecretaire.prenom + " " + this.laSecretaire.nom;
-                    this.menuStrip1.Visible = true;
+                    //this.menuStrip1.Visible = true;
+                    FormGererMedicament f = new FormGererMedicament(laSecretaire);
+                    f.Show();
                 }
             }
         }

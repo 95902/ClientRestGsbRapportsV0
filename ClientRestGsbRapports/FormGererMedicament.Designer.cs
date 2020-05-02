@@ -157,8 +157,9 @@
             this.gunaAdvenceButton4.OnPressedDepth = 20;
             this.gunaAdvenceButton4.Size = new System.Drawing.Size(156, 64);
             this.gunaAdvenceButton4.TabIndex = 0;
-            this.gunaAdvenceButton4.Text = "Déconexion";
+            this.gunaAdvenceButton4.Text = "Déconnexion";
             this.gunaAdvenceButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaAdvenceButton4.Click += new System.EventHandler(this.gunaAdvenceButton4_Click);
             // 
             // gunaLabel1
             // 
