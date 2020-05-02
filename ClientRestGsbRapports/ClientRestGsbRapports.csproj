@@ -108,6 +108,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlAjouter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlAjouter.Designer.cs">
+      <DependentUpon>UserControlAjouter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMedicaments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMedicaments.Designer.cs">
+      <DependentUpon>UserControlMedicaments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlModifier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlModifier.Designer.cs">
+      <DependentUpon>UserControlModifier.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormGererMedicament.resx">
       <DependentUpon>FormGererMedicament.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +159,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControlAjouter.resx">
+      <DependentUpon>UserControlAjouter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMedicaments.resx">
+      <DependentUpon>UserControlMedicaments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlModifier.resx">
+      <DependentUpon>UserControlModifier.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
     </None>
