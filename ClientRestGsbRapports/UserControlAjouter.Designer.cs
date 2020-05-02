@@ -76,7 +76,7 @@
             this.gbtnValider.ForeColor = System.Drawing.Color.White;
             this.gbtnValider.Image = ((System.Drawing.Image)(resources.GetObject("gbtnValider.Image")));
             this.gbtnValider.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnValider.Location = new System.Drawing.Point(310, 419);
+            this.gbtnValider.Location = new System.Drawing.Point(351, 420);
             this.gbtnValider.Name = "gbtnValider";
             this.gbtnValider.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gbtnValider.OnHoverBorderColor = System.Drawing.Color.Black;

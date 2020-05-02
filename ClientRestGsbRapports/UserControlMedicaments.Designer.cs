@@ -31,10 +31,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlMedicaments));
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.gbtnValider = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +68,7 @@
             this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(3, 84);
+            this.gunaDataGridView1.Location = new System.Drawing.Point(3, 83);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.RowHeadersVisible = false;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -130,23 +132,49 @@
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(464, 294);
+            this.button1.Location = new System.Drawing.Point(301, 295);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(67, 29);
             this.button1.TabIndex = 9;
             this.button1.Text = "Ajouter";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // gbtnValider
+            // 
+            this.gbtnValider.AnimationHoverSpeed = 0.07F;
+            this.gbtnValider.AnimationSpeed = 0.03F;
+            this.gbtnValider.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnValider.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.gbtnValider.BorderColor = System.Drawing.Color.Black;
+            this.gbtnValider.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnValider.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnValider.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbtnValider.ForeColor = System.Drawing.Color.White;
+            this.gbtnValider.Image = ((System.Drawing.Image)(resources.GetObject("gbtnValider.Image")));
+            this.gbtnValider.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnValider.Location = new System.Drawing.Point(386, 295);
+            this.gbtnValider.Name = "gbtnValider";
+            this.gbtnValider.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gbtnValider.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnValider.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnValider.OnHoverImage = null;
+            this.gbtnValider.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnValider.Radius = 15;
+            this.gbtnValider.Size = new System.Drawing.Size(145, 29);
+            this.gbtnValider.TabIndex = 42;
+            this.gbtnValider.Text = "Ajouter";
+            // 
             // UserControlMedicaments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.gbtnValider);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.gunaLabel6);
             this.Controls.Add(this.gunaComboBox1);
             this.Controls.Add(this.button1);
             this.Name = "UserControlMedicaments";
-            this.Size = new System.Drawing.Size(545, 336);
+            this.Size = new System.Drawing.Size(545, 328);
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -159,5 +187,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
         private System.Windows.Forms.Button button1;
+        private Guna.UI.WinForms.GunaButton gbtnValider;
     }
 }
