@@ -58,6 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormRecherche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRecherche.Designer.cs">
+      <DependentUpon>FormRecherche.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGererMedicament.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </Compile>
     <EmbeddedResource Include="FormGererMedicament.resx">
       <DependentUpon>FormGererMedicament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecherche.resx">
+      <DependentUpon>FormRecherche.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMedicaments.resx">
       <DependentUpon>FrmMedicaments.cs</DependentUpon>

@@ -33,6 +33,7 @@ namespace ClientRestGsbRapports
             gtxtEffets.Text = e.effets;
             gtxtNomComercial.Text = e.nomCommercial;
             gtxtIdMedicament.Text = e.id;
+                   
 
         }
 
@@ -101,6 +102,17 @@ namespace ClientRestGsbRapports
             //Paramètres: ticket =< ticket > idMedicament =< id > effets =< effets > contreIndications =< cid > composition =< compo >
             //exemple : http://localhost/restGSB/medicament
             //ticket = 4nblbv5zttybtvd3ygx idMedicament = A123 effets = aucuns contreIndications = aucune composition = très compliquée
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+       
+        private void gunaDateTimePicker1_ValueChanged_1(object sender, EventArgs e)
+        {
+            DateTime d = gunaDateTimePicker1.Value;
+            gunaLabel1.Text = d.ToString();
         }
     }
 }

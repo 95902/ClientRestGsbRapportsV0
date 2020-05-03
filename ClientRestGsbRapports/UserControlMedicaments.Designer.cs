@@ -34,16 +34,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlMedicaments));
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
-            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.gbtnValider = new Guna.UI.WinForms.GunaButton();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomCommercialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.compositionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contreIndicationsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.effetsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.medicamentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.gbtnValider = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicamentBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -114,6 +116,45 @@
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gunaDataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDataGridView1_CellContentClick);
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.FillWeight = 20.21178F;
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // nomCommercialDataGridViewTextBoxColumn
+            // 
+            this.nomCommercialDataGridViewTextBoxColumn.DataPropertyName = "nomCommercial";
+            this.nomCommercialDataGridViewTextBoxColumn.FillWeight = 95.50066F;
+            this.nomCommercialDataGridViewTextBoxColumn.HeaderText = "nomCommercial";
+            this.nomCommercialDataGridViewTextBoxColumn.Name = "nomCommercialDataGridViewTextBoxColumn";
+            // 
+            // compositionDataGridViewTextBoxColumn
+            // 
+            this.compositionDataGridViewTextBoxColumn.DataPropertyName = "composition";
+            this.compositionDataGridViewTextBoxColumn.FillWeight = 95.50066F;
+            this.compositionDataGridViewTextBoxColumn.HeaderText = "composition";
+            this.compositionDataGridViewTextBoxColumn.Name = "compositionDataGridViewTextBoxColumn";
+            // 
+            // contreIndicationsDataGridViewTextBoxColumn
+            // 
+            this.contreIndicationsDataGridViewTextBoxColumn.DataPropertyName = "contreIndications";
+            this.contreIndicationsDataGridViewTextBoxColumn.FillWeight = 95.50066F;
+            this.contreIndicationsDataGridViewTextBoxColumn.HeaderText = "contreIndications";
+            this.contreIndicationsDataGridViewTextBoxColumn.Name = "contreIndicationsDataGridViewTextBoxColumn";
+            // 
+            // effetsDataGridViewTextBoxColumn
+            // 
+            this.effetsDataGridViewTextBoxColumn.DataPropertyName = "effets";
+            this.effetsDataGridViewTextBoxColumn.FillWeight = 95.50066F;
+            this.effetsDataGridViewTextBoxColumn.HeaderText = "effets";
+            this.effetsDataGridViewTextBoxColumn.Name = "effetsDataGridViewTextBoxColumn";
+            // 
+            // medicamentBindingSource
+            // 
+            this.medicamentBindingSource.DataSource = typeof(mdlGsbRapports.Medicament);
+            // 
             // gunaLabel6
             // 
             this.gunaLabel6.AutoSize = true;
@@ -182,49 +223,64 @@
             this.gbtnValider.TabIndex = 42;
             this.gbtnValider.Text = "Ajouter";
             // 
-            // idDataGridViewTextBoxColumn
+            // gunaButton1
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.FillWeight = 20.21178F;
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
+            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton1.Location = new System.Drawing.Point(3, 296);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Radius = 15;
+            this.gunaButton1.Size = new System.Drawing.Size(145, 29);
+            this.gunaButton1.TabIndex = 43;
+            this.gunaButton1.Text = "Exporter";
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
-            // nomCommercialDataGridViewTextBoxColumn
+            // gunaButton2
             // 
-            this.nomCommercialDataGridViewTextBoxColumn.DataPropertyName = "nomCommercial";
-            this.nomCommercialDataGridViewTextBoxColumn.FillWeight = 95.50066F;
-            this.nomCommercialDataGridViewTextBoxColumn.HeaderText = "nomCommercial";
-            this.nomCommercialDataGridViewTextBoxColumn.Name = "nomCommercialDataGridViewTextBoxColumn";
-            // 
-            // compositionDataGridViewTextBoxColumn
-            // 
-            this.compositionDataGridViewTextBoxColumn.DataPropertyName = "composition";
-            this.compositionDataGridViewTextBoxColumn.FillWeight = 95.50066F;
-            this.compositionDataGridViewTextBoxColumn.HeaderText = "composition";
-            this.compositionDataGridViewTextBoxColumn.Name = "compositionDataGridViewTextBoxColumn";
-            // 
-            // contreIndicationsDataGridViewTextBoxColumn
-            // 
-            this.contreIndicationsDataGridViewTextBoxColumn.DataPropertyName = "contreIndications";
-            this.contreIndicationsDataGridViewTextBoxColumn.FillWeight = 95.50066F;
-            this.contreIndicationsDataGridViewTextBoxColumn.HeaderText = "contreIndications";
-            this.contreIndicationsDataGridViewTextBoxColumn.Name = "contreIndicationsDataGridViewTextBoxColumn";
-            // 
-            // effetsDataGridViewTextBoxColumn
-            // 
-            this.effetsDataGridViewTextBoxColumn.DataPropertyName = "effets";
-            this.effetsDataGridViewTextBoxColumn.FillWeight = 95.50066F;
-            this.effetsDataGridViewTextBoxColumn.HeaderText = "effets";
-            this.effetsDataGridViewTextBoxColumn.Name = "effetsDataGridViewTextBoxColumn";
-            // 
-            // medicamentBindingSource
-            // 
-            this.medicamentBindingSource.DataSource = typeof(mdlGsbRapports.Medicament);
+            this.gunaButton2.AnimationHoverSpeed = 0.07F;
+            this.gunaButton2.AnimationSpeed = 0.03F;
+            this.gunaButton2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton2.ForeColor = System.Drawing.Color.White;
+            this.gunaButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton2.Image")));
+            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton2.Location = new System.Drawing.Point(154, 295);
+            this.gunaButton2.Name = "gunaButton2";
+            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton2.OnHoverImage = null;
+            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton2.Radius = 15;
+            this.gunaButton2.Size = new System.Drawing.Size(145, 29);
+            this.gunaButton2.TabIndex = 44;
+            this.gunaButton2.Text = "Rechercher";
+            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
             // 
             // UserControlMedicaments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.gunaButton2);
+            this.Controls.Add(this.gunaButton1);
             this.Controls.Add(this.gbtnValider);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.gunaLabel6);
@@ -252,5 +308,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn contreIndicationsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn effetsDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource medicamentBindingSource;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaButton gunaButton2;
     }
 }

@@ -84,5 +84,11 @@ namespace ClientRestGsbRapports
             //    ticket = 4nblbv5zttybtvd3ygx idMedicament = RET12 effets = aucuns contreIndications = aucunes composition = beaucoup de composants
             //    idFamille = A
         }
+
+        private void gunaDateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime d = gunaDateTimePicker1.Value;
+            gunaLabel1.Text = d.ToString();
+        }
     }
 }

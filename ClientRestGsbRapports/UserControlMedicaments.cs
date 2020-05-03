@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Net; // pour WbClient
 using mdlGsbRapports;
 using Newtonsoft.Json;
+using System.Xml;
 
 namespace ClientRestGsbRapports
 {
@@ -20,9 +21,13 @@ namespace ClientRestGsbRapports
         private Secretaire laSecretaire;
         private string url;
         private Medicament leMedicament;
+        private DataTable dt = new DataTable();
         public UserControlMedicaments(Secretaire s)
         {
             InitializeComponent();
+            /// Création du tableau
+            
+            
             this.laSecretaire = s;
             string mdpHas = s.getHashTicketMdp();
 
@@ -53,6 +58,7 @@ namespace ClientRestGsbRapports
             string medicament = d.medicaments.ToString();//liste de familles
             List<Medicament> M = JsonConvert.DeserializeObject<List<Medicament>>(medicament);
             gunaDataGridView1.DataSource = M;
+                 
         }
         private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -60,5 +66,47 @@ namespace ClientRestGsbRapports
             FrmMedicaments f = new FrmMedicaments(m, this.laSecretaire);
             f.Show();
         }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                ds.Tables.Add(dt);
+                ds.WriteXml("Contacts.xml");
+                MessageBox.Show("Fichier Exporter");
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+            FormRecherche r = new FormRecherche(laSecretaire);
+            r.Show();
+        }
+
+        /// Création du tableau
+        //DataTable dt = new DataTable();
+        //int i, j;
+        // Exporter
+        //private void button2_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        DataSet ds = new DataSet();
+        //        ds.Tables.Add(dt);
+        //        ds.WriteXml("Contacts.xml");
+        //        MessageBox.Show("Fichier Exporter");
+        //    }
+
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //    }
+        //}
     }
 }
