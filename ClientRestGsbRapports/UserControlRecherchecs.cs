@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Net; // pour WbClient
 using mdlGsbRapports;
 using Newtonsoft.Json;
+using System.Xml.Serialization;
 
 namespace ClientRestGsbRapports
 {
@@ -20,8 +21,10 @@ namespace ClientRestGsbRapports
         private Secretaire laSecretaire;
         private string url;
         private Medicament leMedicament;
+        private DataTable dt ;
         public UserControlRecherchecs(Secretaire s)
         {
+            
             InitializeComponent();
             wb = new WebClient();
             site = "http://localhost/restGSB/";
@@ -47,6 +50,20 @@ namespace ClientRestGsbRapports
             //      syntaxe: < nom domaine >/ gsbRapports / medicaments ? ticket =< ticket > &dateDebut<date1> & dateFin =< date2 >
             //      exemple : http://localhost/restGSB/medicaments?ticket=4nblbv5zttybtvd3ygx&dateDebut=2018-9-1&dateFin=2019-1-1
 
+        }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            dt = gunaDataGridView1.DataSource as DataTable;
+
+            List<string> ligne1 = new List<string>();
+
+            foreach (DataColumn col in dt.Columns)
+            {
+                ligne1.Add(dt.Rows[0][col].ToString());
+
+                //List<Medicament> listeXsml = new List<Medicament>(gunaDataGridView1.);
+            }
         }
     }
 }
