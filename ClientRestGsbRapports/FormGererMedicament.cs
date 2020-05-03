@@ -120,11 +120,12 @@ namespace ClientRestGsbRapports
         }
         private void gunaAdvenceButton4_Click(object sender, EventArgs e)
         {
-          
-            FormGererMedicament f = new FormGererMedicament(laSecretaire);
-            f.Close();
-            FormGererMedicament fi = new FormGererMedicament(laSecretaire);
-            fi.Hide();
+            //Form1 fo1 = new Form1();
+            //fo1.Close();
+            //FormGererMedicament f = new FormGererMedicament(laSecretaire);
+            //f.Close();
+            //FormGererMedicament fi = new FormGererMedicament(laSecretaire);
+            //fi.Hide();
         }
     }
     

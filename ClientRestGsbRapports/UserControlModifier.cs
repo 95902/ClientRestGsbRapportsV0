@@ -23,20 +23,31 @@ namespace ClientRestGsbRapports
         private Medicament leMedicament;
         public UserControlModifier(Secretaire s,Medicament e)
         {
+           
             InitializeComponent();
+            leMedicament = e;
             this.laSecretaire = s;
             string mdpHas = s.getHashTicketMdp(); //  récupération du ticket
             this.wb = new WebClient();
             this.site = "http://localhost/restGSB/";
-            this.url = this.site + "familles?ticket=" + mdpHas;//Url 
+            this.url = this.site + " medicaments?ticket=" + mdpHas;//Url 
             string data = this.wb.DownloadString(url);
             dynamic d = JsonConvert.DeserializeObject(data);//Deserialisation  avec un objet dynamic
             this.laSecretaire.ticket = d.ticket;//Deserialisation du ticket  
-            string familles = d.familles.ToString();//Deserialisation de la liste
-            List<Famille> l = JsonConvert.DeserializeObject<List<Famille>>(familles);//liste de familles
+            string medicaments = d.medicaments.ToString();//Deserialisation de la liste
+            List<Medicament> l = JsonConvert.DeserializeObject<List<Medicament>>(medicaments);//liste de familles
             gcmbFamille.DataSource = l;// Chargement de la liste  
             gcmbFamille.ValueMember = "id";
-            gcmbFamille.DisplayMember = "libelle";
+            gcmbFamille.DisplayMember = "nomCommercial";
+
+            //Sélectionner tous les médicaments :
+            //syntaxe: < nom domaine >/ gsbRapports / medicaments ? ticket =< ticket >
+            //exemple : http://localhost/restGSB/medicaments?ticket=4nblbv5zttybtvd3ygx
+        }
+
+        private void gcmbFamille_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           ///* g/**/txtComposition.Text =leMedicament.composition ;*/
         }
     }
 }

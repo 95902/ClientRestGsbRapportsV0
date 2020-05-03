@@ -83,6 +83,7 @@
             this.gcmbFamille.OnHoverItemForeColor = System.Drawing.Color.White;
             this.gcmbFamille.Size = new System.Drawing.Size(273, 26);
             this.gcmbFamille.TabIndex = 50;
+            this.gcmbFamille.SelectedIndexChanged += new System.EventHandler(this.gcmbFamille_SelectedIndexChanged);
             // 
             // gtxtEffets
             // 
