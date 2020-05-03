@@ -109,10 +109,6 @@ namespace ClientRestGsbRapports
 
         }
        
-        private void gunaDateTimePicker1_ValueChanged_1(object sender, EventArgs e)
-        {
-            DateTime d = gunaDateTimePicker1.Value;
-            gunaLabel1.Text = d.ToString();
-        }
+       
     }
 }

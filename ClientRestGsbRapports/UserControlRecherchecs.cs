@@ -20,83 +20,32 @@ namespace ClientRestGsbRapports
         private Secretaire laSecretaire;
         private string url;
         private Medicament leMedicament;
-        public UserControlRecherchecs()
+        public UserControlRecherchecs(Secretaire s)
         {
             InitializeComponent();
-            InitializeComponent();
-            this.wb = new WebClient();
-            this.site = "http://localhost/restGSB/";
-            this.laSecretaire = new Secretaire();
-         
-           
+            wb = new WebClient();
+            site = "http://localhost/restGSB/";
+            laSecretaire = s;
+
+
         }
-        //private void gunaDateTimePicker1_ValueChanged(object sender, EventArgs e)
-        //{
-        //    DateTime d = gunaDateTimePicker1.Value;
-        //    gunaLabel2.Text = d.ToString();
-        //}
-
-        private void gunaDateTimePicker2_ValueChanged(object sender, EventArgs e)
+        private void gbtnValider_Click_1(object sender, EventArgs e)
         {
-            //DateTime m = gunaDateTimePicker2.Value;
-            //gunaLabel3.Text = m.ToString();
-        }
+            string dateDebut = gunaDateTimePicker1.Value.ToString("yyyy-MM-dd");
+            string datefin = gunaDateTimePicker2.Value.ToString("yyyy-MM-dd");
+            string mdpHas = this.laSecretaire.getHashTicketMdp();
+            this.url = this.site + "medicaments?ticket=" + mdpHas + "&dateDebut=" + dateDebut + "&dateFin=" + datefin;
+            string data = this.wb.DownloadString(url);
+            dynamic d = JsonConvert.DeserializeObject(data);
 
-        private void gbtnValider_Click(object sender, EventArgs e)
-        {
+            this.laSecretaire.ticket = d.ticket;
+            string medicament = d.medicaments.ToString();//liste de familles
+            List<Medicament> M = JsonConvert.DeserializeObject<List<Medicament>>(medicament);
+            gunaDataGridView1.DataSource = M;
 
-            //string dateDebut = gunaDateTimePicker1.Value.ToString("yyyy-MM-dd");
-            ////string datefin = gunaDateTimePicker2.Value.ToString("yyyy-MM-dd");
-            //string mdpHas = this.laSecretaire.getHashTicketMdp();
-            //this.url = this.site + "medicaments?ticket=" + mdpHas + "&dateDebut=" + dateDebut + "&dateFin=" + /*datefin;*/
-            //string data = this.wb.DownloadString(url);
-            //dynamic d = JsonConvert.DeserializeObject(data);
-            //this.laSecretaire.ticket = d.ticket;
-            //string medicament = d.medicaments.ToString();//liste de familles
-            //List<Medicament> M = JsonConvert.DeserializeObject<List<Medicament>>(medicament);
-            //gdgvMedicament.DataSource = M;
-
-            //    -Sélectionner les médicaments offerts entre deux dates
+            //-Sélectionner les médicaments offerts entre deux dates
             //      syntaxe: < nom domaine >/ gsbRapports / medicaments ? ticket =< ticket > &dateDebut<date1> & dateFin =< date2 >
             //      exemple : http://localhost/restGSB/medicaments?ticket=4nblbv5zttybtvd3ygx&dateDebut=2018-9-1&dateFin=2019-1-1
-            //}
-
-
-
-
-
-            /// Création du tableau
-            //DataTable dt = new DataTable();
-            //int i, j;
-            // Exporter
-            //private void button2_Click(object sender, EventArgs e)
-            //{
-            //    try
-            //    {
-            //        DataSet ds = new DataSet();
-            //        ds.Tables.Add(dt);
-            //        ds.WriteXml("Contacts.xml");
-            //        MessageBox.Show("Fichier Exporter");
-            //    }
-
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show(ex.Message);
-            //    }
-            //}
-
-        }
-
-       
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-            DateTime d = dateTimePicker1.Value;
-            label1.Text = d.ToString();
-        }
-
-        private void UserControlRecherchecs_Load(object sender, EventArgs e)
-        {
 
         }
     }

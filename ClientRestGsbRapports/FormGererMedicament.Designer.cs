@@ -32,7 +32,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGererMedicament));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.userControlRecherchecs1 = new ClientRestGsbRapports.UserControlRecherchecs();
+            this.userControlRecherchecs1 = new ClientRestGsbRapports.UserControlRecherchecs(laSecretaire);
             this.userControlModifier1 = new ClientRestGsbRapports.UserControlModifier(laSecretaire,leMedicament) ;
             this.userControlMedicaments1 = new ClientRestGsbRapports.UserControlMedicaments(laSecretaire);
             this.userControlAjouter1 = new ClientRestGsbRapports.UserControlAjouter(laSecretaire);

@@ -83,11 +83,6 @@ namespace ClientRestGsbRapports
             }
         }
 
-        private void gunaButton2_Click(object sender, EventArgs e)
-        {
-            FormRecherche r = new FormRecherche(laSecretaire);
-            r.Show();
-        }
 
         /// Création du tableau
         //DataTable dt = new DataTable();
