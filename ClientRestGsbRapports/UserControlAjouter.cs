@@ -56,7 +56,7 @@ namespace ClientRestGsbRapports
                 byte[] tabByte = wb.UploadValues(url, "POST", parametres);
                 string reponse = UnicodeEncoding.UTF8.GetString(tabByte);
                 string ticket = reponse.Substring(2, reponse.Length - 2);
-                MessageBox.Show(reponse);
+                MessageBox.Show("Valider");
 
 
             }

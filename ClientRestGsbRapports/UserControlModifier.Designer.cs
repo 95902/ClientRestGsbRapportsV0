@@ -65,6 +65,7 @@
             this.gunaButton1.Size = new System.Drawing.Size(145, 29);
             this.gunaButton1.TabIndex = 51;
             this.gunaButton1.Text = "Valider";
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
             // gcmbFamille
             // 
@@ -93,13 +94,16 @@
             this.gtxtEffets.FocusedBaseColor = System.Drawing.Color.White;
             this.gtxtEffets.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gtxtEffets.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gtxtEffets.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtEffets.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gtxtEffets.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gtxtEffets.Location = new System.Drawing.Point(200, 184);
+            this.gtxtEffets.Multiline = true;
             this.gtxtEffets.Name = "gtxtEffets";
             this.gtxtEffets.PasswordChar = '\0';
             this.gtxtEffets.SelectedText = "";
             this.gtxtEffets.Size = new System.Drawing.Size(273, 59);
             this.gtxtEffets.TabIndex = 49;
+            this.gtxtEffets.Text = "fffff";
             // 
             // gtxtComposition
             // 
@@ -109,8 +113,10 @@
             this.gtxtComposition.FocusedBaseColor = System.Drawing.Color.White;
             this.gtxtComposition.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gtxtComposition.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gtxtComposition.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtComposition.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gtxtComposition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gtxtComposition.Location = new System.Drawing.Point(200, 105);
+            this.gtxtComposition.Multiline = true;
             this.gtxtComposition.Name = "gtxtComposition";
             this.gtxtComposition.PasswordChar = '\0';
             this.gtxtComposition.SelectedText = "";
@@ -125,8 +131,10 @@
             this.gtxtContreIndications.FocusedBaseColor = System.Drawing.Color.White;
             this.gtxtContreIndications.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gtxtContreIndications.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gtxtContreIndications.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gtxtContreIndications.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.gtxtContreIndications.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
             this.gtxtContreIndications.Location = new System.Drawing.Point(200, 272);
+            this.gtxtContreIndications.Multiline = true;
             this.gtxtContreIndications.Name = "gtxtContreIndications";
             this.gtxtContreIndications.PasswordChar = '\0';
             this.gtxtContreIndications.SelectedText = "";

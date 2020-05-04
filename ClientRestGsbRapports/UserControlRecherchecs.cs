@@ -29,7 +29,7 @@ namespace ClientRestGsbRapports
             wb = new WebClient();
             site = "http://localhost/restGSB/";
             laSecretaire = s;
-
+            dt = new DataTable();
 
         }
         private void gbtnValider_Click_1(object sender, EventArgs e)
@@ -54,7 +54,12 @@ namespace ClientRestGsbRapports
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
+           
+
             dt = gunaDataGridView1.DataSource as DataTable;
+
+
+
 
             List<string> ligne1 = new List<string>();
 

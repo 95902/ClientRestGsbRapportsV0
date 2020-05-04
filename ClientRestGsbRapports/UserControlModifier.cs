@@ -47,7 +47,46 @@ namespace ClientRestGsbRapports
 
         private void gcmbFamille_SelectedIndexChanged(object sender, EventArgs e)
         {
-           ///* g/**/txtComposition.Text =leMedicament.composition ;*/
+            gtxtComposition.Text = ((Medicament)this.gcmbFamille.SelectedItem).composition.ToString();
+            gtxtEffets.Text = ((Medicament)this.gcmbFamille.SelectedItem).effets.ToString();
+            gtxtContreIndications.Text = ((Medicament)this.gcmbFamille.SelectedItem).contreIndications.ToString();
         }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            string gtxtIdMedicament = ((Medicament)this.gcmbFamille.SelectedItem).id.ToString();
+            try
+                {
+                    string mdpHas = this.laSecretaire.getHashTicketMdp();
+                    this.url = this.site + "medicament";
+                    NameValueCollection parametres = new NameValueCollection();
+                    parametres.Add("ticket", mdpHas);
+                    parametres.Add("idMedicament", gtxtIdMedicament);
+                    parametres.Add("effets", gtxtEffets.Text);
+                    parametres.Add("contreIndications", gtxtContreIndications.Text);
+                    parametres.Add("composition", gtxtComposition.Text);
+                    byte[] tabByte = wb.UploadValues(url, "POST", parametres);
+                    string reponse = UnicodeEncoding.UTF8.GetString(tabByte);
+                    string ticket = reponse.Substring(2, reponse.Length - 2);
+                    this.laSecretaire.ticket = ticket;
+
+
+
+
+
+                    MessageBox.Show("Valider");
+                }
+                catch (WebException ex)
+                {
+                    if (ex.Response is HttpWebResponse)
+                        MessageBox.Show(((HttpWebResponse)ex.Response).StatusCode.ToString());
+                }
+                //Mise à jour d’un médicament(effets, contre-indications, composition ) à partir de son id
+                //URL : gsbRapports / medicament
+                //Paramètres: ticket =< ticket > idMedicament =< id > effets =< effets > contreIndications =< cid > composition =< compo >
+                //exemple : http://localhost/restGSB/medicament
+                //ticket = 4nblbv5zttybtvd3ygx idMedicament = A123 effets = aucuns contreIndications = aucune composition = très compliquée
+         }
+        
     }
 }

@@ -90,7 +90,7 @@ namespace ClientRestGsbRapports
 
 
 
-                MessageBox.Show(reponse);
+                MessageBox.Show("Valider");
             }
             catch (WebException ex)
             {
