@@ -11,6 +11,8 @@ using System.Net; // pour WbClient
 using mdlGsbRapports;
 using Newtonsoft.Json;
 using System.Xml;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace ClientRestGsbRapports
 {
@@ -21,17 +23,17 @@ namespace ClientRestGsbRapports
         private Secretaire laSecretaire;
         private string url;
         private Medicament leMedicament;
-        private DataTable dt = new DataTable();
+        private List<Medicament> M = new List<Medicament>();
         public UserControlMedicaments(Secretaire s)
         {
             InitializeComponent();
-            /// Création du tableau
+            
             
             
             this.laSecretaire = s;
             string mdpHas = s.getHashTicketMdp();
 
-            //Guna.UI.Lib.GraphicsHelper.DrawLineShadow(gunaPanel1, Color.Black, 20, 5, Guna.UI.WinForms.VerHorAlign.HoriziontalTop);
+            
             this.wb = new WebClient();
             this.site = "http://localhost/restGSB/";
             this.gunaDataGridView1.DataSource = null;
@@ -69,39 +71,12 @@ namespace ClientRestGsbRapports
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                DataSet ds = new DataSet();
-                ds.Tables.Add(dt);
-                ds.WriteXml("Contacts.xml");
-                MessageBox.Show("Fichier Exporter");
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            Stream stream = File.OpenWrite(Environment.CurrentDirectory + "\\rechercheMedicament.txt"); //création du chemin du fichier 
+            XmlSerializer xmlSer = new XmlSerializer(typeof(List<Medicament>)); //
+            xmlSer.Serialize(stream, M);// sérialisation  de la liste 
+            stream.Close();// fin du stream
+            MessageBox.Show("Exportation Réussie !!");
         }
 
-
-        /// Création du tableau
-        //DataTable dt = new DataTable();
-        //int i, j;
-        // Exporter
-        //private void button2_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        DataSet ds = new DataSet();
-        //        ds.Tables.Add(dt);
-        //        ds.WriteXml("Contacts.xml");
-        //        MessageBox.Show("Fichier Exporter");
-        //    }
-
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
     }
 }

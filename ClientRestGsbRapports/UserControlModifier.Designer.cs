@@ -103,7 +103,6 @@
             this.gtxtEffets.SelectedText = "";
             this.gtxtEffets.Size = new System.Drawing.Size(273, 59);
             this.gtxtEffets.TabIndex = 49;
-            this.gtxtEffets.Text = "fffff";
             // 
             // gtxtComposition
             // 

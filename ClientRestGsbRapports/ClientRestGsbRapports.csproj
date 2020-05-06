@@ -58,12 +58,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormRecherche.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormRecherche.Designer.cs">
-      <DependentUpon>FormRecherche.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormGererMedicament.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,12 +70,6 @@
     <Compile Include="FrmMedicaments.Designer.cs">
       <DependentUpon>FrmMedicaments.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmNewMedicement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmNewMedicement.Designer.cs">
-      <DependentUpon>FrmNewMedicement.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,12 +81,6 @@
     </Compile>
     <Compile Include="FrmMajFamille.Designer.cs">
       <DependentUpon>FrmMajFamille.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMajMedicament.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMajMedicament.Designer.cs">
-      <DependentUpon>FrmMajMedicament.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmNewFamille.cs">
       <SubType>Form</SubType>
@@ -141,23 +123,14 @@
     <EmbeddedResource Include="FormGererMedicament.resx">
       <DependentUpon>FormGererMedicament.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRecherche.resx">
-      <DependentUpon>FormRecherche.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmMedicaments.resx">
       <DependentUpon>FrmMedicaments.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmNewMedicement.resx">
-      <DependentUpon>FrmNewMedicement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMajFamille.resx">
       <DependentUpon>FrmMajFamille.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMajMedicament.resx">
-      <DependentUpon>FrmMajMedicament.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmNewFamille.resx">
       <DependentUpon>FrmNewFamille.cs</DependentUpon>

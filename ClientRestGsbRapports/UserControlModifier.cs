@@ -69,12 +69,7 @@ namespace ClientRestGsbRapports
                     string reponse = UnicodeEncoding.UTF8.GetString(tabByte);
                     string ticket = reponse.Substring(2, reponse.Length - 2);
                     this.laSecretaire.ticket = ticket;
-
-
-
-
-
-                    MessageBox.Show("Valider");
+                    MessageBox.Show("Médicament Modifier");
                 }
                 catch (WebException ex)
                 {
@@ -87,6 +82,7 @@ namespace ClientRestGsbRapports
                 //exemple : http://localhost/restGSB/medicament
                 //ticket = 4nblbv5zttybtvd3ygx idMedicament = A123 effets = aucuns contreIndications = aucune composition = très compliquée
          }
-        
+
+       
     }
 }
