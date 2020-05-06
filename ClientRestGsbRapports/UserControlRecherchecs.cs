@@ -11,6 +11,7 @@ using System.Net; // pour WbClient
 using mdlGsbRapports;
 using Newtonsoft.Json;
 using System.Xml.Serialization;
+using System.IO;
 
 namespace ClientRestGsbRapports
 {
@@ -21,7 +22,9 @@ namespace ClientRestGsbRapports
         private Secretaire laSecretaire;
         private string url;
         private Medicament leMedicament;
-        private DataTable dt ;
+        private List<Medicament> M = new List<Medicament>();
+
+
         public UserControlRecherchecs(Secretaire s)
         {
             
@@ -29,10 +32,10 @@ namespace ClientRestGsbRapports
             wb = new WebClient();
             site = "http://localhost/restGSB/";
             laSecretaire = s;
-            dt = new DataTable();
+            
 
         }
-        private void gbtnValider_Click_1(object sender, EventArgs e)
+        public void gbtnValider_Click_1(object sender, EventArgs e)
         {
             string dateDebut = gunaDateTimePicker1.Value.ToString("yyyy-MM-dd");
             string datefin = gunaDateTimePicker2.Value.ToString("yyyy-MM-dd");
@@ -43,7 +46,7 @@ namespace ClientRestGsbRapports
 
             this.laSecretaire.ticket = d.ticket;
             string medicament = d.medicaments.ToString();//liste de familles
-            List<Medicament> M = JsonConvert.DeserializeObject<List<Medicament>>(medicament);
+             M = JsonConvert.DeserializeObject<List<Medicament>>(medicament);
             gunaDataGridView1.DataSource = M;
 
             //-Sélectionner les médicaments offerts entre deux dates
@@ -54,21 +57,12 @@ namespace ClientRestGsbRapports
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-           
-
-            dt = gunaDataGridView1.DataSource as DataTable;
-
-
-
-
-            List<string> ligne1 = new List<string>();
-
-            foreach (DataColumn col in dt.Columns)
-            {
-                ligne1.Add(dt.Rows[0][col].ToString());
-
-                //List<Medicament> listeXsml = new List<Medicament>(gunaDataGridView1.);
-            }
+            Stream stream = File.OpenWrite(Environment.CurrentDirectory + "\\rechercheMedicament.txt"); //création du chemin du fichier 
+            XmlSerializer xmlSer = new XmlSerializer(typeof(List<Medicament>)); //
+            xmlSer.Serialize(stream,M );// sérialisation  de la liste 
+            stream.Close();// fin du stream
+            MessageBox.Show("Exportation Réussie !!");
+            
         }
     }
 }

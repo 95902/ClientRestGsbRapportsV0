@@ -23,5 +23,9 @@ namespace mdlGsbRapports
             this.contreIndications = contreindic;
             this.idFamille = f;
         }
+        public Medicament()
+        {
+
+        }
     }
 }
