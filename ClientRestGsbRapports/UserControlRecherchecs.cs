@@ -57,7 +57,7 @@ namespace ClientRestGsbRapports
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            Stream stream = File.OpenWrite(Environment.CurrentDirectory + "\\rechercheMedicament.txt"); //création du chemin du fichier 
+            Stream stream = File.OpenWrite(Environment.CurrentDirectory + "\\rechercheMedicament.xml"); //création du chemin du fichier 
             XmlSerializer xmlSer = new XmlSerializer(typeof(List<Medicament>)); //
             xmlSer.Serialize(stream,M );// sérialisation  de la liste 
             stream.Close();// fin du stream

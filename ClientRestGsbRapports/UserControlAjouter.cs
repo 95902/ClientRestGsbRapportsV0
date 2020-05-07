@@ -40,6 +40,22 @@ namespace ClientRestGsbRapports
 
         private void gbtnValider_Click(object sender, EventArgs e)
         {
+
+            if (textIdMedicament.Text == String.Empty || gtxtNomCommercial.Text == String.Empty 
+                || gtxtEffets.Text == String.Empty || gtxtContreIndications.Text == String.Empty
+                || gtxtComposition.Text == String.Empty )
+            {
+                MessageBox.Show("Veuillez remplire tous les champs");
+            }
+            //if (gunaComboBox1.SelectedValue.ToString != gunaComboBox1.SelectedValue  )
+            //{
+
+            //}
+
+
+            else { 
+
+
             try  // code pour l'ajout d'un medicament 
             {
                 this.url = this.site + "medicaments"; // url 
@@ -72,6 +88,7 @@ namespace ClientRestGsbRapports
             //     exemple : http://localhost/restGSB/medicaments
             //    ticket = 4nblbv5zttybtvd3ygx idMedicament = RET12 effets = aucuns contreIndications = aucunes composition = beaucoup de composants
             //    idFamille = A
+            }
         }
 
     

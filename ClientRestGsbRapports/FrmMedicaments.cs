@@ -11,6 +11,7 @@ using System.Net; // pour WbClient
 using mdlGsbRapports;
 using Newtonsoft.Json;
 using System.Collections.Specialized;
+using System.Drawing.Imaging;
 
 namespace ClientRestGsbRapports
 {
@@ -38,34 +39,44 @@ namespace ClientRestGsbRapports
         }
         private void gbtnMiseAJours_Click(object sender, EventArgs e)
         {
-            try
+            if (gtxtComposition.Text == String.Empty || gtxtContreIndications.Text == String.Empty || gtxtEffets.Text == String.Empty)
             {
-                // Mise A jours des medicaments
-                string mdpHas = this.laSecretaire.getHashTicketMdp();
-                this.url = this.site + "medicament";
-                NameValueCollection parametres = new NameValueCollection();
-                parametres.Add("ticket", mdpHas);
-                parametres.Add("idMedicament", gtxtIdMedicament.Text);
-                parametres.Add("effets", gtxtEffets.Text);
-                parametres.Add("contreIndications", gtxtContreIndications.Text);
-                parametres.Add("composition", gtxtComposition.Text);
-                byte[] tabByte = wb.UploadValues(url, "POST", parametres);
-                string reponse = UnicodeEncoding.UTF8.GetString(tabByte);
-                string ticket = reponse.Substring(2, reponse.Length - 2);
-                this.laSecretaire.ticket = ticket;
+                MessageBox.Show("Veuillez remplire tous les champs");
+            }
 
-                MessageBox.Show("Mise a Jour");
-            }
-            catch (WebException ex)
-            {
-                if (ex.Response is HttpWebResponse)
-                    MessageBox.Show(((HttpWebResponse)ex.Response).StatusCode.ToString());
-            }
-            //Mise à jour d’un médicament(effets, contre-indications, composition ) à partir de son id
-            //URL : gsbRapports / medicament
-            //Paramètres: ticket =< ticket > idMedicament =< id > effets =< effets > contreIndications =< cid > composition =< compo >
-            //exemple : http://localhost/restGSB/medicament
-            //ticket = 4nblbv5zttybtvd3ygx idMedicament = A123 effets = aucuns contreIndications = aucune composition = très compliquée
+             else 
+             {    
+
+                    try
+                    {
+                        // Mise A jours des medicaments
+                        string mdpHas = this.laSecretaire.getHashTicketMdp();
+                        this.url = this.site + "medicament";
+                        NameValueCollection parametres = new NameValueCollection();
+                        parametres.Add("ticket", mdpHas);
+                        parametres.Add("idMedicament", gtxtIdMedicament.Text);
+                        parametres.Add("effets", gtxtEffets.Text);
+                        parametres.Add("contreIndications", gtxtContreIndications.Text);
+                        parametres.Add("composition", gtxtComposition.Text);
+                        byte[] tabByte = wb.UploadValues(url, "POST", parametres);
+                        string reponse = UnicodeEncoding.UTF8.GetString(tabByte);
+                        string ticket = reponse.Substring(2, reponse.Length - 2);
+                        this.laSecretaire.ticket = ticket;
+
+                        MessageBox.Show("Mise a Jour");
+                    }
+                    catch (WebException ex)
+                    {
+                        if (ex.Response is HttpWebResponse)
+                            MessageBox.Show(((HttpWebResponse)ex.Response).StatusCode.ToString());
+                    }
+                    //Mise à jour d’un médicament(effets, contre-indications, composition ) à partir de son id
+                    //URL : gsbRapports / medicament
+                    //Paramètres: ticket =< ticket > idMedicament =< id > effets =< effets > contreIndications =< cid > composition =< compo >
+                    //exemple : http://localhost/restGSB/medicament
+                   //ticket = 4nblbv5zttybtvd3ygx idMedicament = A123 effets = aucuns contreIndications = aucune composition = très compliquée
+             }
+
         }
   
     }
