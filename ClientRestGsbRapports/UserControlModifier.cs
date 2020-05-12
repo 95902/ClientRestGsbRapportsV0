@@ -70,7 +70,8 @@ namespace ClientRestGsbRapports
                     string ticket = reponse.Substring(2, reponse.Length - 2);
                     this.laSecretaire.ticket = ticket;
                     MessageBox.Show("Médicament Modifier");
-                }
+              
+            }
                 catch (WebException ex)
                 {
                     if (ex.Response is HttpWebResponse)

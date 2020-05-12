@@ -36,24 +36,27 @@ namespace ClientRestGsbRapports
             gunaComboBox1.DataSource = l;// Chargement de la liste  
             gunaComboBox1.ValueMember = "id";
             gunaComboBox1.DisplayMember = "libelle";
+            //voir pour remetre a vide 
         }
-
+           
         private void gbtnValider_Click(object sender, EventArgs e)
         {
+            string itemSelected = gunaComboBox1.SelectedItem.ToString();
 
             if (textIdMedicament.Text == String.Empty || gtxtNomCommercial.Text == String.Empty 
                 || gtxtEffets.Text == String.Empty || gtxtContreIndications.Text == String.Empty
-                || gtxtComposition.Text == String.Empty )
+                || gtxtComposition.Text == String.Empty)
             {
                 MessageBox.Show("Veuillez remplire tous les champs");
             }
-            //if (gunaComboBox1.SelectedValue.ToString != gunaComboBox1.SelectedValue  )
-            //{
+            if (gunaComboBox1.SelectedIndex == -1 )//voir avec le prof 
+            {
+                MessageBox.Show("Veuillez sélectioner une famille");
+            }
 
-            //}
 
-
-            else { 
+            else
+            { 
 
 
             try  // code pour l'ajout d'un medicament 
@@ -73,7 +76,7 @@ namespace ClientRestGsbRapports
                 string reponse = UnicodeEncoding.UTF8.GetString(tabByte);
                 string ticket = reponse.Substring(2, reponse.Length - 2);
                 MessageBox.Show("Médicament ajouté");
-
+                this.laSecretaire.ticket = ticket;
 
             }
             catch (WebException ex)

@@ -5,3 +5,6 @@ dotnet_diagnostic.IDE0005.severity = none
 
 # IDE0055: Corriger la mise en forme
 dotnet_diagnostic.IDE0055.severity = none
+
+# IDE0011: Ajouter des accolades
+csharp_prefer_braces = false:silent
